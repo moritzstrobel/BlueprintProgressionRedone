@@ -62,6 +62,9 @@ def validate_config(config: dict) -> None:
     templates = config.get("templates")
     blueprints = config.get("blueprints")
     costs = config.get("costs")
+    icon_base_path = config.get("icon_base_path")
+    debug_icon_name = config.get("debug_icon_name")
+    icon_names = config.get("icon_names")
 
     if not isinstance(costs, dict):
         raise ValueError("Missing or invalid 'costs' object.")
@@ -76,6 +79,15 @@ def validate_config(config: dict) -> None:
                     f"Invalid cost for weapon tier {weapon_tier}, "
                     f"blueprint tier {blueprint_tier}: {value}"
                 )
+
+    if not isinstance(icon_base_path, str) or not icon_base_path:
+        raise ValueError("Missing or invalid 'icon_base_path'.")
+
+    if not isinstance(debug_icon_name, str) or not debug_icon_name:
+        raise ValueError("Missing or invalid 'debug_icon_name'.")
+
+    if not isinstance(icon_names, dict) or not icon_names:
+        raise ValueError("Missing or invalid 'icon_names' object.")
 
     if not isinstance(templates, dict):
         raise ValueError("Missing or invalid 'templates' object.")
@@ -147,6 +159,12 @@ def validate_config(config: dict) -> None:
                 f"Blueprint '{sid}' contains duplicate fitting weapons."
             )
 
+        family = sid.split("_Upgrades_Tier_")[0]
+        if family not in icon_names:
+            raise ValueError(
+                f"No icon mapping found for blueprint family '{family}'."
+            )
+
         seen_sids.add(sid)
 
     for debug in config.get("debug_items", []):
@@ -203,6 +221,9 @@ def render_item(
     item: dict,
     templates: dict,
     costs: dict,
+    icon_base_path: str,
+    icon_names: dict[str, str],
+    debug_icon_name: str,
     *,
     debug: bool = False,
 ) -> str:
@@ -212,6 +233,15 @@ def render_item(
     weapon_tier = item.get("weapon_tier", 1)
     cost = costs[str(weapon_tier)][str(tier)]
 
+    if debug:
+        icon_name = debug_icon_name
+    else:
+        family = sid.split("_Upgrades_Tier_")[0]
+        icon_name = icon_names[family]
+
+    icon_asset = f"T_{icon_name}_Tier{tier}"
+    icon = f"Texture2D'{icon_base_path}/{icon_asset}.{icon_asset}'"
+
     # Same-file inheritance: refkey alone is valid and is widely used
     # by vanilla STALKER 2 configs.
     lines = [
@@ -219,6 +249,7 @@ def render_item(
         f"   SID = {sid}",
         f"   LocalizationSID = {item.get('localization_sid', sid)}",
         f"   Cost = {cost}",
+        f"   Icon = {icon}",
     ]
 
     lines.extend(
@@ -260,6 +291,9 @@ def main() -> None:
     blueprints = config["blueprints"]
     debug_items = config.get("debug_items", [])
     costs = config["costs"]
+    icon_base_path = config["icon_base_path"]
+    debug_icon_name = config["debug_icon_name"]
+    icon_names = config["icon_names"]
 
     lines = [
         "// -----------------------------------------------------------------------------",
@@ -301,6 +335,9 @@ def main() -> None:
                     item,
                     templates,
                     costs,
+                    icon_base_path,
+                    icon_names,
+                    debug_icon_name,
                     debug=True
                 )
             )
@@ -327,7 +364,10 @@ def main() -> None:
             render_item(
                 item,
                 templates,
-                costs
+                costs,
+                icon_base_path,
+                icon_names,
+                debug_icon_name
             )
         )
 
@@ -353,6 +393,7 @@ def main() -> None:
     print(f"Templates:       {len(templates)}")
     print(f"Debug items:     {len(debug_items)}")
     print(f"Blueprint items: {len(blueprints)}")
+    print(f"Icon mappings:   {len(icon_names)}")
     print(f"Unique BPs:      {len(all_sids)}")
     print()
     print(f"Written to:\n{OUTPUT_PATH}")
