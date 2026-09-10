@@ -1,0 +1,3440 @@
+{
+  "_comment": "Blueprint tier assignments for weapon upgrades. Generated as an initial progression pass from vanilla upgrade SID structure. Review/tune individual entries freely; generator uses blueprint_tier as source of truth.",
+  "tiering_rules": {
+    "regular_upgrades": "The first progression number after _Upgrade_ is mapped to blueprint tier (..._1... -> Tier 1, ..._2... -> Tier 2, ..._3... -> Tier 3).",
+    "attachments": {
+      "Screw": 1,
+      "Rail": 1,
+      "SinMuz": 1,
+      "Mag": 1,
+      "AutMuz": 2,
+      "Laser": 2,
+      "Grip": 2,
+      "FrontExtension": 2,
+      "Laser_HP": 3,
+      "Offset_Stock": 3
+    }
+  },
+  "upgrades": [
+    {
+      "upgrade_sid": "GunPM_Upgrade_Attachment_Screw",
+      "family": "PM",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Screw"
+    },
+    {
+      "upgrade_sid": "GunUDP_Upgrade_Attachment_Laser",
+      "family": "UDP",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunM10_Upgrade_Attachment_Laser",
+      "family": "M10",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunM10_Upgrade_Attachment_Rail",
+      "family": "M10",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunViper_Upgrade_Attachment_Rail",
+      "family": "Viper",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunViper_Upgrade_Attachment_Laser",
+      "family": "Viper",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunViper_Upgrade_Attachment_Laser_HP",
+      "family": "Viper",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunViper_Upgrade_Attachment_Offset_Stock",
+      "family": "Viper",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunAKU_Upgrade_Attachment_AutMuz",
+      "family": "AKU",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:AutMuz"
+    },
+    {
+      "upgrade_sid": "GunAKU_Upgrade_Attachment_Rail",
+      "family": "AKU",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunAKU_Upgrade_Attachment_Offset_Stock",
+      "family": "AKU",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunBucket_Upgrade_Attachment_Rail",
+      "family": "Bucket",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunBucket_Upgrade_Attachment_AutMuz",
+      "family": "Bucket",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:AutMuz"
+    },
+    {
+      "upgrade_sid": "GunBucket_Upgrade_Attachment_Laser",
+      "family": "Bucket",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunBucket_Upgrade_Attachment_Laser_HP",
+      "family": "Bucket",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunBucket_Upgrade_Attachment_Offset_Stock",
+      "family": "Bucket",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunAK74_Upgrade_Attachment_SinMuz",
+      "family": "AK74",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunAK74_Upgrade_Attachment_Offset_Stock",
+      "family": "AK74",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunM16_Upgrade_Attachment_Grip",
+      "family": "M16",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Grip"
+    },
+    {
+      "upgrade_sid": "GunM16_Upgrade_Attachment_Offset_Stock",
+      "family": "M16",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Attachment_SinMuz",
+      "family": "G37",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Attachment_AutMuz",
+      "family": "G37",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:AutMuz"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Attachment_Laser",
+      "family": "G37",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Attachment_Laser_HP",
+      "family": "G37",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Attachment_Grip",
+      "family": "G37",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Grip"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Attachment_Rail",
+      "family": "G37",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Attachment_Offset_Stock",
+      "family": "G37",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunFora_Upgrade_Attachment_SinMuz",
+      "family": "Fora",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunFora_Upgrade_Attachment_AutMuz",
+      "family": "Fora",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:AutMuz"
+    },
+    {
+      "upgrade_sid": "GunFora_Upgrade_Attachment_Laser",
+      "family": "Fora",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunFora_Upgrade_Attachment_Laser_HP",
+      "family": "Fora",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunFora_Upgrade_Attachment_Grip",
+      "family": "Fora",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Grip"
+    },
+    {
+      "upgrade_sid": "GunFora_Upgrade_Attachment_Offset_Stock",
+      "family": "Fora",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunM860_Upgrade_Attachment_Laser",
+      "family": "M860",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunM860_Upgrade_Attachment_Laser_HP",
+      "family": "M860",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunM860_Upgrade_Attachment_Mag",
+      "family": "M860",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Mag"
+    },
+    {
+      "upgrade_sid": "GunM860_Upgrade_Attachment_Offset_Stock",
+      "family": "M860",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunSVDM_Upgrade_Attachment_SinMuz",
+      "family": "SVDM",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunSVDM_Upgrade_Attachment_Laser",
+      "family": "SVDM",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunSVDM_Upgrade_Attachment_Laser_HP",
+      "family": "SVDM",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunSVDM_Upgrade_Attachment_Offset_Stock",
+      "family": "SVDM",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Attachment_SinMuz",
+      "family": "M701",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Attachment_Laser",
+      "family": "M701",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Attachment_Laser_HP",
+      "family": "M701",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Attachment_Offset_Stock",
+      "family": "M701",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Attachment_SinMuz",
+      "family": "Integral",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Attachment_AutMuz",
+      "family": "Integral",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:AutMuz"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Attachment_Laser",
+      "family": "Integral",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Attachment_Laser_HP",
+      "family": "Integral",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Attachment_Grip",
+      "family": "Integral",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Grip"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Attachment_FrontExtension",
+      "family": "Integral",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:FrontExtension"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Attachment_Offset_Stock",
+      "family": "Integral",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Attachment_Rail",
+      "family": "Zubr",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Attachment_SinMuz",
+      "family": "Zubr",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Attachment_AutMuz",
+      "family": "Zubr",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:AutMuz"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Attachment_Laser",
+      "family": "Zubr",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Attachment_Laser_HP",
+      "family": "Zubr",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Attachment_Offset_Stock",
+      "family": "Zubr",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Attachment_Laser",
+      "family": "Lavina",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Attachment_Laser_HP",
+      "family": "Lavina",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Attachment_Grip",
+      "family": "Lavina",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Grip"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Attachment_Rail",
+      "family": "Lavina",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Attachment_Offset_Stock",
+      "family": "Lavina",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunPKP_Upgrade_Attachment_AutMuz",
+      "family": "PKP",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:AutMuz"
+    },
+    {
+      "upgrade_sid": "GunPKP_Upgrade_Attachment_Grip",
+      "family": "PKP",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Grip"
+    },
+    {
+      "upgrade_sid": "GunPKP_Upgrade_Attachment_Rail",
+      "family": "PKP",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunPKP_Upgrade_Attachment_Offset_Stock",
+      "family": "PKP",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Attachment_Rail",
+      "family": "SPSA",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Attachment_Grip",
+      "family": "SPSA",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Grip"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Attachment_Laser",
+      "family": "SPSA",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Attachment_Laser_HP",
+      "family": "SPSA",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Attachment_SinMuz",
+      "family": "SPSA",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Attachment_Offset_Stock",
+      "family": "SPSA",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Attachment_Rail",
+      "family": "D12",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Attachment_SinMuz",
+      "family": "D12",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Attachment_Grip",
+      "family": "D12",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Grip"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Attachment_Laser",
+      "family": "D12",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Attachment_Laser_HP",
+      "family": "D12",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Attachment_Offset_Stock",
+      "family": "D12",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunRam2_Upgrade_Attachment_SinMuz",
+      "family": "Ram2",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunRam2_Upgrade_Attachment_Grip",
+      "family": "Ram2",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Grip"
+    },
+    {
+      "upgrade_sid": "GunRam2_Upgrade_Attachment_Laser",
+      "family": "Ram2",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunRam2_Upgrade_Attachment_Laser_HP",
+      "family": "Ram2",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunRam2_Upgrade_Attachment_Offset_Stock",
+      "family": "Ram2",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunAPB_Upgrade_Attachment_Rail",
+      "family": "APB",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunAPB_Upgrade_Attachment_Laser",
+      "family": "APB",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunAPB_Upgrade_Attachment_AutMuz",
+      "family": "APB",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:AutMuz"
+    },
+    {
+      "upgrade_sid": "GunRhino_Upgrade_Attachment_Rail",
+      "family": "Rhino",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunRhino_Upgrade_Attachment_Laser",
+      "family": "Rhino",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunRhino_Upgrade_Attachment_SinMuz",
+      "family": "Rhino",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunMark_Upgrade_Attachment_SinMuz",
+      "family": "Mark",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunMark_Upgrade_Attachment_Rail",
+      "family": "Mark",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunMark_Upgrade_Attachment_Grip",
+      "family": "Mark",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Grip"
+    },
+    {
+      "upgrade_sid": "GunMark_Upgrade_Attachment_Laser",
+      "family": "Mark",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunMark_Upgrade_Attachment_Laser_HP",
+      "family": "Mark",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunMark_Upgrade_Attachment_Offset_Stock",
+      "family": "Mark",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Attachment_SinMuz",
+      "family": "SVU",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Attachment_Grip",
+      "family": "SVU",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Grip"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Attachment_Laser",
+      "family": "SVU",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Attachment_Laser_HP",
+      "family": "SVU",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Attachment_Offset_Stock",
+      "family": "SVU",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Attachment_SinMuz",
+      "family": "Grim",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Attachment_AutMuz",
+      "family": "Grim",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:AutMuz"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Attachment_Laser",
+      "family": "Grim",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Attachment_Laser_HP",
+      "family": "Grim",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Attachment_Rail",
+      "family": "Grim",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Attachment_Offset_Stock",
+      "family": "Grim",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunGvintar_Upgrade_Attachment_Laser",
+      "family": "Gvintar",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunGvintar_Upgrade_Attachment_Laser_HP",
+      "family": "Gvintar",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunGvintar_Upgrade_Attachment_Offset_Stock",
+      "family": "Gvintar",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Attachment_AutMuz",
+      "family": "Kharod",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:AutMuz"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Attachment_Grip",
+      "family": "Kharod",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Grip"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Attachment_Laser",
+      "family": "Kharod",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Attachment_Laser_HP",
+      "family": "Kharod",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Attachment_Offset_Stock",
+      "family": "Kharod",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Attachment_Grip",
+      "family": "Dnipro",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Grip"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Attachment_SinMuz",
+      "family": "Dnipro",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Attachment_AutMuz",
+      "family": "Dnipro",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:AutMuz"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Attachment_Laser",
+      "family": "Dnipro",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Attachment_Laser_HP",
+      "family": "Dnipro",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Attachment_Offset_Stock",
+      "family": "Dnipro",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunThreeLine_Upgrade_Attachment_SinMuz",
+      "family": "ThreeLine",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunThreeLine_Upgrade_Attachment_Rail",
+      "family": "ThreeLine",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunThreeLine_Upgrade_Attachment_Grip",
+      "family": "ThreeLine",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Grip"
+    },
+    {
+      "upgrade_sid": "GunThreeLine_Upgrade_Attachment_Offset_Stock",
+      "family": "ThreeLine",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunKora_Upgrade_Attachment_Laser",
+      "family": "Kora",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunKora_Upgrade_Attachment_Rail",
+      "family": "Kora",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunKora_Upgrade_Attachment_SinMuz",
+      "family": "Kora",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunTOZ_Upgrade_Attachment_Offset_Stock",
+      "family": "TOZ",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Attachment_AutMuz",
+      "family": "Arev",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:AutMuz"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Attachment_SinMuz",
+      "family": "Arev",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Attachment_Grip",
+      "family": "Arev",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Grip"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Attachment_Laser",
+      "family": "Arev",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Attachment_Laser_HP",
+      "family": "Arev",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Attachment_Offset_Stock",
+      "family": "Arev",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Attachment_Rail",
+      "family": "SKP",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Attachment_SinMuz",
+      "family": "SKP",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Attachment_AutMuz",
+      "family": "SKP",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:AutMuz"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Attachment_Grip",
+      "family": "SKP",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Grip"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Attachment_Laser",
+      "family": "SKP",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Attachment_Laser_HP",
+      "family": "SKP",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Attachment_Offset_Stock",
+      "family": "SKP",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunFora230_Upgrade_Attachment_SinMuz",
+      "family": "Fora230",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunFora230_Upgrade_Attachment_Laser",
+      "family": "Fora230",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunFora230_Upgrade_Attachment_Laser_HP",
+      "family": "Fora230",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunFora230_Upgrade_Attachment_Offset_Stock",
+      "family": "Fora230",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Attachment_Rail",
+      "family": "GP3A",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:Rail"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Attachment_SinMuz",
+      "family": "GP3A",
+      "blueprint_tier": 1,
+      "assignment_source": "attachment:SinMuz"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Attachment_AutMuz",
+      "family": "GP3A",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:AutMuz"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Attachment_Grip",
+      "family": "GP3A",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Grip"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Attachment_Laser",
+      "family": "GP3A",
+      "blueprint_tier": 2,
+      "assignment_source": "attachment:Laser"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Attachment_Laser_HP",
+      "family": "GP3A",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Laser_HP"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Attachment_Offset_Stock",
+      "family": "GP3A",
+      "blueprint_tier": 3,
+      "assignment_source": "attachment:Offset_Stock"
+    },
+    {
+      "upgrade_sid": "GunPM_Upgrade_Barrel_1",
+      "family": "PM",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunPM_Upgrade_Barrel_2",
+      "family": "PM",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunPM_Upgrade_Body_1",
+      "family": "PM",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunUDP_Upgrade_Barrel_1",
+      "family": "UDP",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunUDP_Upgrade_Barrel_2_1",
+      "family": "UDP",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunUDP_Upgrade_Barrel_2_2",
+      "family": "UDP",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunUDP_Upgrade_Body_1",
+      "family": "UDP",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunUDP_Upgrade_Body_2",
+      "family": "UDP",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM10_Upgrade_Barrel_1",
+      "family": "M10",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM10_Upgrade_Barrel_2_1",
+      "family": "M10",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM10_Upgrade_Barrel_2_2",
+      "family": "M10",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM10_Upgrade_Grip_1",
+      "family": "M10",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM10_Upgrade_Grip_2_1",
+      "family": "M10",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM10_Upgrade_Grip_2_2",
+      "family": "M10",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunViper_Upgrade_Barrel_1_1",
+      "family": "Viper",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunViper_Upgrade_Barrel_1_2",
+      "family": "Viper",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunViper_Upgrade_Barrel_2_1",
+      "family": "Viper",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunViper_Upgrade_Barrel_2_2",
+      "family": "Viper",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunViper_Upgrade_Barrel_3",
+      "family": "Viper",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunViper_Upgrade_Body_1",
+      "family": "Viper",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunViper_Upgrade_Body_2",
+      "family": "Viper",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunViper_Upgrade_Body_3_1",
+      "family": "Viper",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunViper_Upgrade_Body_3_2",
+      "family": "Viper",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAKU_Upgrade_Handguard_1_1",
+      "family": "AKU",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAKU_Upgrade_Handguard_1_2",
+      "family": "AKU",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAKU_Upgrade_Handguard_2_1",
+      "family": "AKU",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAKU_Upgrade_Handguard_2_2",
+      "family": "AKU",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAKU_Upgrade_Body_1",
+      "family": "AKU",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAKU_Upgrade_Body_2_1",
+      "family": "AKU",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAKU_Upgrade_Body_2_2",
+      "family": "AKU",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAKU_Upgrade_Stock_1_1",
+      "family": "AKU",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAKU_Upgrade_Stock_1_2",
+      "family": "AKU",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunBucket_Upgrade_Barrel_1",
+      "family": "Bucket",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunBucket_Upgrade_Barrel_2_1",
+      "family": "Bucket",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunBucket_Upgrade_Barrel_2_2",
+      "family": "Bucket",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunBucket_Upgrade_Barrel_3",
+      "family": "Bucket",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunBucket_Upgrade_Body_1",
+      "family": "Bucket",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunBucket_Upgrade_Body_2",
+      "family": "Bucket",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunBucket_Upgrade_Body_3",
+      "family": "Bucket",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunBucket_Upgrade_Grip_1",
+      "family": "Bucket",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunBucket_Upgrade_Grip_2",
+      "family": "Bucket",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunBucket_Upgrade_Grip_3",
+      "family": "Bucket",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Barrel_1",
+      "family": "Integral",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Barrel_2",
+      "family": "Integral",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Barrel_3_1",
+      "family": "Integral",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Barrel_3_2",
+      "family": "Integral",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Body_1",
+      "family": "Integral",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Body_2_1",
+      "family": "Integral",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Body_2_2",
+      "family": "Integral",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Body_3",
+      "family": "Integral",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Stock_1",
+      "family": "Integral",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Stock_2_1",
+      "family": "Integral",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunIntegral_Upgrade_Stock_2_2",
+      "family": "Integral",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Barrel_1",
+      "family": "Zubr",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Barrel_2_1",
+      "family": "Zubr",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Barrel_2_2",
+      "family": "Zubr",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Barrel_3",
+      "family": "Zubr",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Handguard_1",
+      "family": "Zubr",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Handguard_2_1",
+      "family": "Zubr",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Handguard_2_2",
+      "family": "Zubr",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Body_1",
+      "family": "Zubr",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Body_2",
+      "family": "Zubr",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Grip_1",
+      "family": "Zubr",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Grip_2_1",
+      "family": "Zubr",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Grip_2_2",
+      "family": "Zubr",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunZubr_Upgrade_Grip_3",
+      "family": "Zubr",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAK74_Upgrade_Barrel_1",
+      "family": "AK74",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAK74_Upgrade_Barrel_2_1",
+      "family": "AK74",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAK74_Upgrade_Barrel_2_2",
+      "family": "AK74",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAK74_Upgrade_Body_1",
+      "family": "AK74",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAK74_Upgrade_Body_2",
+      "family": "AK74",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAK74_Upgrade_Stock_1",
+      "family": "AK74",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAK74_Upgrade_Stock_2",
+      "family": "AK74",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAK74_Upgrade_Stock_3",
+      "family": "AK74",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM16_Upgrade_Barrel_1",
+      "family": "M16",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM16_Upgrade_Barrel_2_1",
+      "family": "M16",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM16_Upgrade_Barrel_2_2",
+      "family": "M16",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM16_Upgrade_Barrel_3",
+      "family": "M16",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM16_Upgrade_Body_1",
+      "family": "M16",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM16_Upgrade_Grip_1",
+      "family": "M16",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM16_Upgrade_Grip_2",
+      "family": "M16",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM16_Upgrade_Stock_1",
+      "family": "M16",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora_Upgrade_Barrel_1",
+      "family": "Fora",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora_Upgrade_Barrel_2",
+      "family": "Fora",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora_Upgrade_Barrel_3",
+      "family": "Fora",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora_Upgrade_Handguard_1",
+      "family": "Fora",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora_Upgrade_Handguard_2_1",
+      "family": "Fora",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora_Upgrade_Handguard_2_2",
+      "family": "Fora",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora_Upgrade_Body_1",
+      "family": "Fora",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora_Upgrade_Body_2_1",
+      "family": "Fora",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora_Upgrade_Body_2_2",
+      "family": "Fora",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora_Upgrade_Body_3_1",
+      "family": "Fora",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora_Upgrade_Body_3_2",
+      "family": "Fora",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Barrel_1",
+      "family": "G37",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Barrel_2_1",
+      "family": "G37",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Barrel_2_2",
+      "family": "G37",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Handguard_1_1",
+      "family": "G37",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Handguard_1_2",
+      "family": "G37",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Body_1_1",
+      "family": "G37",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Body_1_2",
+      "family": "G37",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Stock_1_1",
+      "family": "G37",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Stock_1_2",
+      "family": "G37",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Stock_2_1",
+      "family": "G37",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunG37_Upgrade_Stock_2_2",
+      "family": "G37",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Barrel_1",
+      "family": "Lavina",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Barrel_2_1",
+      "family": "Lavina",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Barrel_2_2",
+      "family": "Lavina",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Barrel_3",
+      "family": "Lavina",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Handguard_1_1",
+      "family": "Lavina",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Handguard_1_2",
+      "family": "Lavina",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Body_1_1",
+      "family": "Lavina",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Body_1_2",
+      "family": "Lavina",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Body_2",
+      "family": "Lavina",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Body_3",
+      "family": "Lavina",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Grip_1",
+      "family": "Lavina",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Grip_2",
+      "family": "Lavina",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Stock_1",
+      "family": "Lavina",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Stock_2_1",
+      "family": "Lavina",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunLavina_Upgrade_Stock_2_2",
+      "family": "Lavina",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunObrez_Upgrade_Barrel_1",
+      "family": "Obrez",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunObrez_Upgrade_Handguard_1",
+      "family": "Obrez",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunObrez_Upgrade_Grip_1",
+      "family": "Obrez",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunObrez_Upgrade_Grip_2",
+      "family": "Obrez",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunTOZ_Upgrade_Barrel_2_1",
+      "family": "TOZ",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunTOZ_Upgrade_Barrel_3",
+      "family": "TOZ",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunTOZ_Upgrade_Handguard_1",
+      "family": "TOZ",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunTOZ_Upgrade_Body_1",
+      "family": "TOZ",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunTOZ_Upgrade_Stock_1",
+      "family": "TOZ",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunTOZ_Upgrade_Stock_2",
+      "family": "TOZ",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunTOZ_Upgrade_Stock_3",
+      "family": "TOZ",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM860_Upgrade_Barrel_1_1",
+      "family": "M860",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM860_Upgrade_Barrel_1_2",
+      "family": "M860",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM860_Upgrade_Barrel_2_1",
+      "family": "M860",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM860_Upgrade_Stock_1_1",
+      "family": "M860",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM860_Upgrade_Stock_1_2",
+      "family": "M860",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM860_Upgrade_Stock_2_1",
+      "family": "M860",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM860_Upgrade_Stock_2_2",
+      "family": "M860",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM860_Upgrade_Stock_3",
+      "family": "M860",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVDM_Upgrade_Barrel_1",
+      "family": "SVDM",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVDM_Upgrade_Barrel_2_1",
+      "family": "SVDM",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVDM_Upgrade_Barrel_2_2",
+      "family": "SVDM",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVDM_Upgrade_Barrel_3",
+      "family": "SVDM",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVDM_Upgrade_Barrel_3_2",
+      "family": "SVDM",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVDM_Upgrade_Body_1_1",
+      "family": "SVDM",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVDM_Upgrade_Body_1_2",
+      "family": "SVDM",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVDM_Upgrade_Stock_1",
+      "family": "SVDM",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVDM_Upgrade_Stock_2_1",
+      "family": "SVDM",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVDM_Upgrade_Stock_2_2",
+      "family": "SVDM",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Barrel_1",
+      "family": "M701",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Barrel_2_1",
+      "family": "M701",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Barrel_2_2",
+      "family": "M701",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Barrel_3",
+      "family": "M701",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Barrel_3_2",
+      "family": "M701",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Body_1",
+      "family": "M701",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Body_2_1",
+      "family": "M701",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Body_2_2",
+      "family": "M701",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Body_3_1",
+      "family": "M701",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Body_3_2",
+      "family": "M701",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Stock_1",
+      "family": "M701",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Stock_2_1",
+      "family": "M701",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Stock_2_2",
+      "family": "M701",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunM701_Upgrade_Stock_3",
+      "family": "M701",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunPKP_Upgrade_Barrel_1",
+      "family": "PKP",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunPKP_Upgrade_Barrel_2",
+      "family": "PKP",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunPKP_Upgrade_Barrel_3",
+      "family": "PKP",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunPKP_Upgrade_Handguard_1",
+      "family": "PKP",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunPKP_Upgrade_Handguard_2_1",
+      "family": "PKP",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunPKP_Upgrade_Handguard_2_2",
+      "family": "PKP",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunPKP_Upgrade_Body_1_1",
+      "family": "PKP",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunPKP_Upgrade_Body_1_2",
+      "family": "PKP",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunPKP_Upgrade_Body_2",
+      "family": "PKP",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunPKP_Upgrade_Stock_1",
+      "family": "PKP",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunPKP_Upgrade_Stock_2_1",
+      "family": "PKP",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunPKP_Upgrade_Stock_2_2",
+      "family": "PKP",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunPKP_Upgrade_Stock_3",
+      "family": "PKP",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Barrel_1",
+      "family": "SPSA",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Barrel_2_1",
+      "family": "SPSA",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Barrel_2_2",
+      "family": "SPSA",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Barrel_3_1",
+      "family": "SPSA",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Barrel_3_2",
+      "family": "SPSA",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Body_1",
+      "family": "SPSA",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Body_2_1",
+      "family": "SPSA",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Body_2_2",
+      "family": "SPSA",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Body_3_1",
+      "family": "SPSA",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Body_3_2",
+      "family": "SPSA",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Stock_1",
+      "family": "SPSA",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Stock_2_1",
+      "family": "SPSA",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Stock_2_2",
+      "family": "SPSA",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSPSA_Upgrade_Stock_3",
+      "family": "SPSA",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Barrel_1_1",
+      "family": "D12",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Barrel_1_2",
+      "family": "D12",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Barrel_2_1",
+      "family": "D12",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Barrel_2_2",
+      "family": "D12",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Barrel_3_1",
+      "family": "D12",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Barrel_3_2",
+      "family": "D12",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Handguard_1_1",
+      "family": "D12",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Handguard_1_2",
+      "family": "D12",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Handguard_2",
+      "family": "D12",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Body_1",
+      "family": "D12",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Body_2_1",
+      "family": "D12",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Body_2_2",
+      "family": "D12",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Grip_1_1",
+      "family": "D12",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Grip_1_2",
+      "family": "D12",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Grip_2_1",
+      "family": "D12",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Grip_2_2",
+      "family": "D12",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Stock_1",
+      "family": "D12",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Stock_2",
+      "family": "D12",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Stock_3_1",
+      "family": "D12",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunD12_Upgrade_Stock_3_2",
+      "family": "D12",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRam2_Upgrade_Handguard_1_1",
+      "family": "Ram2",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRam2_Upgrade_Handguard_1_2",
+      "family": "Ram2",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRam2_Upgrade_Handguard_2_1",
+      "family": "Ram2",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRam2_Upgrade_Handguard_2_2",
+      "family": "Ram2",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRam2_Upgrade_Body_1",
+      "family": "Ram2",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRam2_Upgrade_Body_2",
+      "family": "Ram2",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRam2_Upgrade_Stock_1",
+      "family": "Ram2",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRam2_Upgrade_Stock_2_1",
+      "family": "Ram2",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRam2_Upgrade_Stock_2_2",
+      "family": "Ram2",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRam2_Upgrade_Stock_3_1",
+      "family": "Ram2",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRam2_Upgrade_Stock_3_2",
+      "family": "Ram2",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAPB_Upgrade_Barrel_1",
+      "family": "APB",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAPB_Upgrade_Barrel_2_1",
+      "family": "APB",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAPB_Upgrade_Barrel_2_2",
+      "family": "APB",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAPB_Upgrade_Barrel_3_1",
+      "family": "APB",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAPB_Upgrade_Barrel_3_2",
+      "family": "APB",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAPB_Upgrade_Body_1_1",
+      "family": "APB",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAPB_Upgrade_Body_1_2",
+      "family": "APB",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAPB_Upgrade_Body_2",
+      "family": "APB",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAPB_Upgrade_Grip_1",
+      "family": "APB",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAPB_Upgrade_Grip_2_1",
+      "family": "APB",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAPB_Upgrade_Grip_2_2",
+      "family": "APB",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunAPB_Upgrade_Grip_3",
+      "family": "APB",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRhino_Upgrade_Barrel_1",
+      "family": "Rhino",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRhino_Upgrade_Barrel_2_1",
+      "family": "Rhino",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRhino_Upgrade_Barrel_2_2",
+      "family": "Rhino",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRhino_Upgrade_Barrel_3",
+      "family": "Rhino",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRhino_Upgrade_Body_1_1",
+      "family": "Rhino",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRhino_Upgrade_Body_1_2",
+      "family": "Rhino",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRhino_Upgrade_Grip_1",
+      "family": "Rhino",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRhino_Upgrade_Grip_2_1",
+      "family": "Rhino",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRhino_Upgrade_Grip_2_2",
+      "family": "Rhino",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunRhino_Upgrade_Grip_3",
+      "family": "Rhino",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunMark_Upgrade_Barrel_1_1",
+      "family": "Mark",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunMark_Upgrade_Barrel_1_2",
+      "family": "Mark",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunMark_Upgrade_Barrel_2_1",
+      "family": "Mark",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunMark_Upgrade_Barrel_2_2",
+      "family": "Mark",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunMark_Upgrade_Body_1_1",
+      "family": "Mark",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunMark_Upgrade_Body_1_2",
+      "family": "Mark",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunMark_Upgrade_Grip_1_1",
+      "family": "Mark",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunMark_Upgrade_Grip_1_2",
+      "family": "Mark",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunMark_Upgrade_Grip_2",
+      "family": "Mark",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunMark_Upgrade_Grip_3_1",
+      "family": "Mark",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunMark_Upgrade_Grip_3_2",
+      "family": "Mark",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Barrel_1_1",
+      "family": "SVU",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Barrel_1_2",
+      "family": "SVU",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Barrel_2_1",
+      "family": "SVU",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Barrel_2_2",
+      "family": "SVU",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Barrel_3",
+      "family": "SVU",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Barrel_3_2",
+      "family": "SVU",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Handguard_1",
+      "family": "SVU",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Handguard_2_1",
+      "family": "SVU",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Handguard_2_2",
+      "family": "SVU",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Handguard_3",
+      "family": "SVU",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Grip_1_1",
+      "family": "SVU",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Grip_1_2",
+      "family": "SVU",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Grip_2_1",
+      "family": "SVU",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Grip_2_2",
+      "family": "SVU",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Grip_3_1",
+      "family": "SVU",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Grip_3_2",
+      "family": "SVU",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Stock_1_1",
+      "family": "SVU",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Stock_1_2",
+      "family": "SVU",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Stock_2_1",
+      "family": "SVU",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Stock_2_2",
+      "family": "SVU",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSVU_Upgrade_Stock_3",
+      "family": "SVU",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Barrel_1_1",
+      "family": "Grim",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Barrel_1_2",
+      "family": "Grim",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Barrel_2",
+      "family": "Grim",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Body_1",
+      "family": "Grim",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Body_2_1",
+      "family": "Grim",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Body_2_2",
+      "family": "Grim",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Body_3_1",
+      "family": "Grim",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Body_3_2",
+      "family": "Grim",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Grip_1",
+      "family": "Grim",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Grip_2_1",
+      "family": "Grim",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Grip_2_2",
+      "family": "Grim",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Grip_3",
+      "family": "Grim",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Stock_1",
+      "family": "Grim",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Stock_2_1",
+      "family": "Grim",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGrim_Upgrade_Stock_2_2",
+      "family": "Grim",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGvintar_Upgrade_Barrel_1",
+      "family": "Gvintar",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGvintar_Upgrade_Barrel_2_1",
+      "family": "Gvintar",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGvintar_Upgrade_Barrel_2_2",
+      "family": "Gvintar",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGvintar_Upgrade_Barrel_3",
+      "family": "Gvintar",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGvintar_Upgrade_Body_1_1",
+      "family": "Gvintar",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGvintar_Upgrade_Body_1_2",
+      "family": "Gvintar",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGvintar_Upgrade_Body_2",
+      "family": "Gvintar",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGvintar_Upgrade_Body_3",
+      "family": "Gvintar",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGvintar_Upgrade_Stock_1_1",
+      "family": "Gvintar",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGvintar_Upgrade_Stock_1_2",
+      "family": "Gvintar",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGvintar_Upgrade_Stock_2_1",
+      "family": "Gvintar",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGvintar_Upgrade_Stock_2_2",
+      "family": "Gvintar",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Barrel_1",
+      "family": "Kharod",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Barrel_2_1",
+      "family": "Kharod",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Barrel_2_2",
+      "family": "Kharod",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Barrel_3_1",
+      "family": "Kharod",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Barrel_3_2",
+      "family": "Kharod",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Handguard_1",
+      "family": "Kharod",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Handguard_2_1",
+      "family": "Kharod",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Handguard_2_2",
+      "family": "Kharod",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Body_1",
+      "family": "Kharod",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Grip_1",
+      "family": "Kharod",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Grip_2",
+      "family": "Kharod",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Grip_3",
+      "family": "Kharod",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Stock_1",
+      "family": "Kharod",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Stock_2_1",
+      "family": "Kharod",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Stock_2_2",
+      "family": "Kharod",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKharod_Upgrade_Stock_3",
+      "family": "Kharod",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Barrel_1_1",
+      "family": "Dnipro",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Barrel_1_2",
+      "family": "Dnipro",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Barrel_2_1",
+      "family": "Dnipro",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Barrel_2_2",
+      "family": "Dnipro",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Barrel_3",
+      "family": "Dnipro",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Handguard_1_1",
+      "family": "Dnipro",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Handguard_1_2",
+      "family": "Dnipro",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Handguard_2_1",
+      "family": "Dnipro",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Handguard_2_2",
+      "family": "Dnipro",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Handguard_3",
+      "family": "Dnipro",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Body_1",
+      "family": "Dnipro",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Body_2",
+      "family": "Dnipro",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Stock_1_1",
+      "family": "Dnipro",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Stock_1_2",
+      "family": "Dnipro",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Stock_2_1",
+      "family": "Dnipro",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunDnipro_Upgrade_Stock_2_2",
+      "family": "Dnipro",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunThreeLine_Upgrade_Barrel_1",
+      "family": "ThreeLine",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunThreeLine_Upgrade_Barrel_2_1",
+      "family": "ThreeLine",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunThreeLine_Upgrade_Barrel_2_2",
+      "family": "ThreeLine",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunThreeLine_Upgrade_Barrel_3",
+      "family": "ThreeLine",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunThreeLine_Upgrade_Grip_1",
+      "family": "ThreeLine",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunThreeLine_Upgrade_Grip_2_1",
+      "family": "ThreeLine",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunThreeLine_Upgrade_Grip_2_2",
+      "family": "ThreeLine",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunThreeLine_Upgrade_Stock_1_1",
+      "family": "ThreeLine",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunThreeLine_Upgrade_Stock_1_2",
+      "family": "ThreeLine",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKora_Upgrade_Barrel_1",
+      "family": "Kora",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKora_Upgrade_Barrel_2",
+      "family": "Kora",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKora_Upgrade_Body_1",
+      "family": "Kora",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKora_Upgrade_Body_2",
+      "family": "Kora",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKora_Upgrade_Grip_1",
+      "family": "Kora",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKora_Upgrade_Grip_2_1",
+      "family": "Kora",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunKora_Upgrade_Grip_2_2",
+      "family": "Kora",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Barrel_1_1",
+      "family": "Arev",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Barrel_1_2",
+      "family": "Arev",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Barrel_2",
+      "family": "Arev",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Barrel_3_1",
+      "family": "Arev",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Barrel_3_2",
+      "family": "Arev",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Handguard_1_1",
+      "family": "Arev",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Handguard_1_2",
+      "family": "Arev",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Handguard_2_1",
+      "family": "Arev",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Handguard_2_2",
+      "family": "Arev",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Body_1",
+      "family": "Arev",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Body_2",
+      "family": "Arev",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Body_3",
+      "family": "Arev",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Grip_1",
+      "family": "Arev",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Grip_2_1",
+      "family": "Arev",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Grip_2_2",
+      "family": "Arev",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Grip_3_1",
+      "family": "Arev",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Grip_3_2",
+      "family": "Arev",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Stock_1_1",
+      "family": "Arev",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Stock_1_2",
+      "family": "Arev",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Stock_2_1",
+      "family": "Arev",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunArev_Upgrade_Stock_2_2",
+      "family": "Arev",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Barrel_1_1",
+      "family": "SKP",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Barrel_1_2",
+      "family": "SKP",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Barrel_2_1",
+      "family": "SKP",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Barrel_2_2",
+      "family": "SKP",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Barrel_3_1",
+      "family": "SKP",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Barrel_3_2",
+      "family": "SKP",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Handguard_1_1",
+      "family": "SKP",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Handguard_1_2",
+      "family": "SKP",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Handguard_2",
+      "family": "SKP",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Body_1",
+      "family": "SKP",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Body_2",
+      "family": "SKP",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Grip_1_1",
+      "family": "SKP",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Grip_1_2",
+      "family": "SKP",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Grip_2",
+      "family": "SKP",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Stock_1_1",
+      "family": "SKP",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunSKP_Upgrade_Stock_1_2",
+      "family": "SKP",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora230_Upgrade_Barrel_1_1",
+      "family": "Fora230",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora230_Upgrade_Barrel_1_2",
+      "family": "Fora230",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora230_Upgrade_Barrel_2",
+      "family": "Fora230",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora230_Upgrade_Handguard_1",
+      "family": "Fora230",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora230_Upgrade_Handguard_2",
+      "family": "Fora230",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora230_Upgrade_Body_1",
+      "family": "Fora230",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora230_Upgrade_Body_2_1",
+      "family": "Fora230",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora230_Upgrade_Body_2_2",
+      "family": "Fora230",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora230_Upgrade_Stock_1",
+      "family": "Fora230",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora230_Upgrade_Stock_2",
+      "family": "Fora230",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunFora230_Upgrade_Stock_3",
+      "family": "Fora230",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Barrel_1_1",
+      "family": "GP3A",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Barrel_1_2",
+      "family": "GP3A",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Barrel_2_1",
+      "family": "GP3A",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Barrel_2_2",
+      "family": "GP3A",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Barrel_3",
+      "family": "GP3A",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Handguard_1_1",
+      "family": "GP3A",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Handguard_1_2",
+      "family": "GP3A",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Handguard_2_1",
+      "family": "GP3A",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Handguard_2_2",
+      "family": "GP3A",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Body_1",
+      "family": "GP3A",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Body_2_1",
+      "family": "GP3A",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Body_2_2",
+      "family": "GP3A",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Grip_1_1",
+      "family": "GP3A",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Grip_1_2",
+      "family": "GP3A",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Grip_2_1",
+      "family": "GP3A",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Grip_2_2",
+      "family": "GP3A",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Grip_3",
+      "family": "GP3A",
+      "blueprint_tier": 3,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Stock_1",
+      "family": "GP3A",
+      "blueprint_tier": 1,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Stock_2_1",
+      "family": "GP3A",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    },
+    {
+      "upgrade_sid": "GunGP3A_Upgrade_Stock_2_2",
+      "family": "GP3A",
+      "blueprint_tier": 2,
+      "assignment_source": "prototype-stage-number"
+    }
+  ]
+}

@@ -1,0 +1,1081 @@
+{
+  "_comment": "Blueprint prototype generation config. The three custom tier templates inherit vanilla BlueprintTemplate. All real blueprint items inherit one of these tier templates, so shared icon/grid/inventory settings only exist once.",
+  "templates": {
+    "1": {
+      "sid": "BPR_BlueprintTemplate_Tier_I",
+      "parent_refurl": "../BlueprintPrototypes.cfg",
+      "parent_refkey": "BlueprintTemplate",
+      "icon": "Texture2D'/Game/GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest/T_BPR_Blueprint_Tier_I_Icon.T_BPR_Blueprint_Tier_I_Icon'",
+      "item_grid_width": 2,
+      "item_grid_height": 2,
+      "invisible_in_player_inventory": true
+    },
+    "2": {
+      "sid": "BPR_BlueprintTemplate_Tier_II",
+      "parent_refurl": "../BlueprintPrototypes.cfg",
+      "parent_refkey": "BlueprintTemplate",
+      "icon": "Texture2D'/Game/GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest/T_BPR_Blueprint_Tier_II_Icon.T_BPR_Blueprint_Tier_II_Icon'",
+      "item_grid_width": 2,
+      "item_grid_height": 2,
+      "invisible_in_player_inventory": true
+    },
+    "3": {
+      "sid": "BPR_BlueprintTemplate_Tier_III",
+      "parent_refurl": "../BlueprintPrototypes.cfg",
+      "parent_refkey": "BlueprintTemplate",
+      "icon": "Texture2D'/Game/GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest/T_BPR_Blueprint_Tier_III_Icon.T_BPR_Blueprint_Tier_III_Icon'",
+      "item_grid_width": 2,
+      "item_grid_height": 2,
+      "invisible_in_player_inventory": true
+    }
+  },
+  "debug_items": [
+    {
+      "sid": "BPR_Test_Blueprint_Tier_I",
+      "tier": 1,
+      "localization_sid": "BPR_Test_Blueprint_Tier_I",
+      "fitting_weapons": [
+        "GunAK74_ST"
+      ],
+      "invisible_in_player_inventory": false,
+      "weapon_tier": 1
+    },
+    {
+      "sid": "BPR_Test_Blueprint_Tier_II",
+      "tier": 2,
+      "localization_sid": "BPR_Test_Blueprint_Tier_I",
+      "fitting_weapons": [
+        "GunAK74_ST"
+      ],
+      "invisible_in_player_inventory": false,
+      "weapon_tier": 1
+    },
+    {
+      "sid": "BPR_Test_Blueprint_Tier_III",
+      "tier": 3,
+      "localization_sid": "BPR_Test_Blueprint_Tier_I",
+      "fitting_weapons": [
+        "GunAK74_ST"
+      ],
+      "invisible_in_player_inventory": false,
+      "weapon_tier": 1
+    }
+  ],
+  "blueprints": [
+    {
+      "sid": "AK74_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunAK74_ST",
+        "GunAK74_Phantom_ST",
+        "GunAK74_Korshunov_ST",
+        "GunAK74_Strelok_ST",
+        "Gun_Combatant_AR",
+        "Gun_Drowned_AR",
+        "Gun_Lummox_AR"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "AK74_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunAK74_ST",
+        "GunAK74_Phantom_ST",
+        "GunAK74_Korshunov_ST",
+        "GunAK74_Strelok_ST",
+        "Gun_Combatant_AR",
+        "Gun_Drowned_AR",
+        "Gun_Lummox_AR"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "AK74_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunAK74_ST",
+        "GunAK74_Phantom_ST",
+        "GunAK74_Korshunov_ST",
+        "GunAK74_Strelok_ST",
+        "Gun_Combatant_AR",
+        "Gun_Drowned_AR",
+        "Gun_Lummox_AR"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "AKU_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunAKU_PP",
+        "Gun_Silence_SMG",
+        "Gun_Spitfire_SMG"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "AKU_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunAKU_PP",
+        "Gun_Silence_SMG",
+        "Gun_Spitfire_SMG"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "AKU_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunAKU_PP",
+        "Gun_Silence_SMG",
+        "Gun_Spitfire_SMG"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "APB_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunAPB_HG",
+        "Gun_Encourage_HG"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "APB_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunAPB_HG",
+        "Gun_Encourage_HG"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "APB_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunAPB_HG",
+        "Gun_Encourage_HG"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "Arev_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunArev_ST",
+        "GunArevPrecise_AR"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "Arev_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunArev_ST",
+        "GunArevPrecise_AR"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "Arev_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunArev_ST",
+        "GunArevPrecise_AR"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "Bucket_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunBucket_PP",
+        "Gun_Spitter_SMG"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "Bucket_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunBucket_PP",
+        "Gun_Spitter_SMG"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "Bucket_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunBucket_PP",
+        "Gun_Spitter_SMG"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "D12_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunD12_SG"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "D12_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunD12_SG"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "D12_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunD12_SG"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "Dnipro_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunDnipro_ST",
+        "Gun_Sotnyk_AR"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "Dnipro_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunDnipro_ST",
+        "Gun_Sotnyk_AR"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "Dnipro_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunDnipro_ST",
+        "Gun_Sotnyk_AR"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "Fora_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunFora_ST",
+        "Gun_Decider_AR"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "Fora_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunFora_ST",
+        "Gun_Decider_AR"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "Fora_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunFora_ST",
+        "Gun_Decider_AR"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "Fora230_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunFora230_PP"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "Fora230_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunFora230_PP"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "Fora230_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunFora230_PP"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "G37_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunG37_ST",
+        "GunG37V2_ST"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "G37_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunG37_ST",
+        "GunG37V2_ST"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "G37_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunG37_ST",
+        "GunG37V2_ST"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "GP3A_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunGP3A_DMR"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "GP3A_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunGP3A_DMR"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "GP3A_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunGP3A_DMR"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "Grim_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunGrim_ST",
+        "Gun_S15_AR"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "Grim_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunGrim_ST",
+        "Gun_S15_AR"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "Grim_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunGrim_ST",
+        "Gun_S15_AR"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "Gvintar_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunGvintar_ST",
+        "Gun_Merc_AR"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "Gvintar_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunGvintar_ST",
+        "Gun_Merc_AR"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "Gvintar_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunGvintar_ST",
+        "Gun_Merc_AR"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "Integral_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunIntegral_PP"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "Integral_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunIntegral_PP"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "Integral_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunIntegral_PP"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "Kharod_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunKharod_ST"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "Kharod_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunKharod_ST"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "Kharod_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunKharod_ST"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "Kora_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunKora_HG",
+        "GunNightStalker_HG"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "Kora_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunKora_HG",
+        "GunNightStalker_HG"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "Kora_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunKora_HG",
+        "GunNightStalker_HG"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "Lavina_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunLavina_ST",
+        "Gun_Trophy_AR"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "Lavina_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunLavina_ST",
+        "Gun_Trophy_AR"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "Lavina_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunLavina_ST",
+        "Gun_Trophy_AR"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "M10_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunM10_HG",
+        "Gun_GStreet_HG"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "M10_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunM10_HG",
+        "Gun_GStreet_HG"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "M10_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunM10_HG",
+        "Gun_GStreet_HG"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "M16_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunM16_ST",
+        "Gun_Sharpshooter_AR",
+        "Gun_Unknown_AR",
+        "Gun_SOFMOD_AR"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "M16_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunM16_ST",
+        "Gun_Sharpshooter_AR",
+        "Gun_Unknown_AR",
+        "Gun_SOFMOD_AR"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "M16_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunM16_ST",
+        "Gun_Sharpshooter_AR",
+        "Gun_Unknown_AR",
+        "Gun_SOFMOD_AR"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "M701_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunM701_SP",
+        "Gun_Cavalier_SR"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "M701_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunM701_SP",
+        "Gun_Cavalier_SR"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "M701_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunM701_SP",
+        "Gun_Cavalier_SR"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "M860_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunM860_SG",
+        "Gun_Predator_SG"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "M860_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunM860_SG",
+        "Gun_Predator_SG"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "M860_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunM860_SG",
+        "Gun_Predator_SG"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "Mark_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunMark_SP",
+        "Gun_Partner_SR"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "Mark_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunMark_SP",
+        "Gun_Partner_SR"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "Mark_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunMark_SP",
+        "Gun_Partner_SR"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "Obrez_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunObrez_SG"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "Obrez_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunObrez_SG"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "Obrez_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunObrez_SG"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "PKP_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunPKP_MG",
+        "GunPKP_Korshunov_MG",
+        "Gun_Tank_MG"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "PKP_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunPKP_MG",
+        "GunPKP_Korshunov_MG",
+        "Gun_Tank_MG"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "PKP_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunPKP_MG",
+        "GunPKP_Korshunov_MG",
+        "Gun_Tank_MG"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "PM_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunPM_HG",
+        "Gun_ProjectY_HG",
+        "Gun_Star_HG",
+        "Gun_SkifGun_HG",
+        "GunPM_PDA_Tutorial_HG"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "PM_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunPM_HG",
+        "Gun_ProjectY_HG",
+        "Gun_Star_HG",
+        "Gun_SkifGun_HG",
+        "GunPM_PDA_Tutorial_HG"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "PM_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunPM_HG",
+        "Gun_ProjectY_HG",
+        "Gun_Star_HG",
+        "Gun_SkifGun_HG",
+        "GunPM_PDA_Tutorial_HG"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "Ram2_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunRam2_SG",
+        "Gun_Texas_SG"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "Ram2_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunRam2_SG",
+        "Gun_Texas_SG"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "Ram2_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunRam2_SG",
+        "Gun_Texas_SG"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "Rhino_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunRhino_HG"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "Rhino_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunRhino_HG"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "Rhino_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunRhino_HG"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "SKP_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunSKP_DMR"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "SKP_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunSKP_DMR"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "SKP_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunSKP_DMR"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "SPSA_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunSPSA_SG",
+        "Gun_Sledgehammer_SG"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "SPSA_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunSPSA_SG",
+        "Gun_Sledgehammer_SG"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "SPSA_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunSPSA_SG",
+        "Gun_Sledgehammer_SG"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "SVDM_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunSVDM_SP",
+        "Gun_Lynx_SR"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "SVDM_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunSVDM_SP",
+        "Gun_Lynx_SR"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "SVDM_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunSVDM_SP",
+        "Gun_Lynx_SR"
+      ],
+      "weapon_tier": 2
+    },
+    {
+      "sid": "SVU_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunSVU_SP",
+        "Gun_Whip_SR",
+        "GunSVU_Sniper_Duga_SP"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "SVU_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunSVU_SP",
+        "Gun_Whip_SR",
+        "GunSVU_Sniper_Duga_SP"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "SVU_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunSVU_SP",
+        "Gun_Whip_SR",
+        "GunSVU_Sniper_Duga_SP"
+      ],
+      "weapon_tier": 4
+    },
+    {
+      "sid": "TOZ_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunTOZ_SG",
+        "Gun_Rail_SG",
+        "GunTOZ_Gonta"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "TOZ_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunTOZ_SG",
+        "Gun_Rail_SG",
+        "GunTOZ_Gonta"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "TOZ_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunTOZ_SG",
+        "Gun_Rail_SG",
+        "GunTOZ_Gonta"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "ThreeLine_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunThreeLine_SP",
+        "GunGonta_SP"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "ThreeLine_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunThreeLine_SP",
+        "GunGonta_SP"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "ThreeLine_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunThreeLine_SP",
+        "GunGonta_SP"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "UDP_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunUDP_HG",
+        "Gun_Deadeye_HG",
+        "Gun_Krivenko_HG"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "UDP_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunUDP_HG",
+        "Gun_Deadeye_HG",
+        "Gun_Krivenko_HG"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "UDP_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunUDP_HG",
+        "Gun_Deadeye_HG",
+        "Gun_Krivenko_HG"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "Viper_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunViper_PP",
+        "Gun_Shakh_SMG"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "Viper_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunViper_PP",
+        "Gun_Shakh_SMG"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "Viper_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunViper_PP",
+        "Gun_Shakh_SMG"
+      ],
+      "weapon_tier": 1
+    },
+    {
+      "sid": "Zubr_Upgrades_Tier_1",
+      "tier": 1,
+      "fitting_weapons": [
+        "GunZubr_PP",
+        "Gun_RatKiller_SMG"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "Zubr_Upgrades_Tier_2",
+      "tier": 2,
+      "fitting_weapons": [
+        "GunZubr_PP",
+        "Gun_RatKiller_SMG"
+      ],
+      "weapon_tier": 3
+    },
+    {
+      "sid": "Zubr_Upgrades_Tier_3",
+      "tier": 3,
+      "fitting_weapons": [
+        "GunZubr_PP",
+        "Gun_RatKiller_SMG"
+      ],
+      "weapon_tier": 3
+    }
+  ],
+  "costs": {
+    "1": {
+      "1": 2500,
+      "2": 5000,
+      "3": 8000
+    },
+    "2": {
+      "1": 5000,
+      "2": 10000,
+      "3": 16000
+    },
+    "3": {
+      "1": 9000,
+      "2": 18000,
+      "3": 28000
+    },
+    "4": {
+      "1": 15000,
+      "2": 30000,
+      "3": 45000
+    }
+  }
+}

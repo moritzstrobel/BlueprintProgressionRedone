@@ -1,0 +1,2597 @@
+{
+  "_comment": "Source of truth for Blueprint Reloaded localization. The importer performs an UPSERT: existing SIDs are updated, missing SIDs are appended, unrelated entries remain untouched.",
+  "entries": [
+    {
+      "sid": "sid_upgrades_AK74_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "AK74 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_AK74_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "AK74 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_AK74_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the AK74 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_AK74_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the AK74 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_AK74_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "AK74 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_AK74_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "AK74 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_AK74_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the AK74 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_AK74_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the AK74 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_AK74_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "AK74 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_AK74_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "AK74 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_AK74_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the AK74 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_AK74_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the AK74 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_AKU_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "AKU Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_AKU_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "AKU Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_AKU_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the AKU weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_AKU_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the AKU weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_AKU_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "AKU Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_AKU_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "AKU Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_AKU_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the AKU weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_AKU_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the AKU weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_AKU_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "AKU Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_AKU_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "AKU Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_AKU_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the AKU weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_AKU_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the AKU weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_APB_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "APB Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_APB_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "APB Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_APB_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the APB weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_APB_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the APB weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_APB_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "APB Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_APB_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "APB Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_APB_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the APB weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_APB_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the APB weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_APB_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "APB Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_APB_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "APB Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_APB_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the APB weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_APB_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the APB weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Arev_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Arev Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_Arev_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Arev Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Arev_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Arev weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Arev_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Arev weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Arev_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Arev Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_Arev_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Arev Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Arev_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Arev weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Arev_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Arev weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Arev_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Arev Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_Arev_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Arev Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Arev_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Arev weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Arev_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Arev weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Bucket_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Bucket Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_Bucket_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Bucket Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Bucket_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Bucket weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Bucket_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Bucket weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Bucket_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Bucket Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_Bucket_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Bucket Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Bucket_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Bucket weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Bucket_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Bucket weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Bucket_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Bucket Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_Bucket_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Bucket Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Bucket_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Bucket weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Bucket_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Bucket weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_D12_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "D12 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_D12_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "D12 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_D12_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the D12 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_D12_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the D12 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_D12_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "D12 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_D12_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "D12 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_D12_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the D12 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_D12_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the D12 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_D12_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "D12 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_D12_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "D12 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_D12_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the D12 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_D12_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the D12 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Dnipro_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Dnipro Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_Dnipro_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Dnipro Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Dnipro_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Dnipro weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Dnipro_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Dnipro weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Dnipro_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Dnipro Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_Dnipro_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Dnipro Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Dnipro_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Dnipro weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Dnipro_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Dnipro weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Dnipro_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Dnipro Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_Dnipro_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Dnipro Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Dnipro_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Dnipro weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Dnipro_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Dnipro weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Fora_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Fora Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_Fora_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Fora Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Fora_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Fora weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Fora_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Fora weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Fora_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Fora Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_Fora_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Fora Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Fora_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Fora weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Fora_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Fora weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Fora_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Fora Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_Fora_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Fora Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Fora_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Fora weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Fora_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Fora weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Fora230_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Fora230 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_Fora230_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Fora230 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Fora230_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Fora230 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Fora230_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Fora230 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Fora230_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Fora230 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_Fora230_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Fora230 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Fora230_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Fora230 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Fora230_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Fora230 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Fora230_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Fora230 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_Fora230_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Fora230 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Fora230_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Fora230 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Fora230_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Fora230 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_G37_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "G37 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_G37_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "G37 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_G37_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the G37 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_G37_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the G37 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_G37_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "G37 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_G37_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "G37 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_G37_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the G37 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_G37_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the G37 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_G37_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "G37 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_G37_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "G37 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_G37_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the G37 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_G37_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the G37 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_GP3A_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "GP3A Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_GP3A_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "GP3A Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_GP3A_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the GP3A weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_GP3A_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the GP3A weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_GP3A_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "GP3A Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_GP3A_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "GP3A Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_GP3A_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the GP3A weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_GP3A_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the GP3A weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_GP3A_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "GP3A Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_GP3A_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "GP3A Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_GP3A_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the GP3A weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_GP3A_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the GP3A weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Grim_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Grim Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_Grim_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Grim Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Grim_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Grim weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Grim_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Grim weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Grim_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Grim Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_Grim_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Grim Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Grim_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Grim weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Grim_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Grim weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Grim_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Grim Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_Grim_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Grim Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Grim_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Grim weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Grim_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Grim weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Gvintar_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Gvintar Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_Gvintar_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Gvintar Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Gvintar_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Gvintar weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Gvintar_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Gvintar weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Gvintar_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Gvintar Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_Gvintar_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Gvintar Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Gvintar_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Gvintar weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Gvintar_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Gvintar weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Gvintar_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Gvintar Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_Gvintar_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Gvintar Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Gvintar_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Gvintar weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Gvintar_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Gvintar weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Integral_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Integral Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_Integral_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Integral Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Integral_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Integral weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Integral_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Integral weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Integral_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Integral Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_Integral_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Integral Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Integral_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Integral weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Integral_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Integral weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Integral_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Integral Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_Integral_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Integral Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Integral_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Integral weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Integral_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Integral weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Kharod_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Kharod Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_Kharod_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Kharod Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Kharod_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Kharod weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Kharod_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Kharod weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Kharod_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Kharod Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_Kharod_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Kharod Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Kharod_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Kharod weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Kharod_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Kharod weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Kharod_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Kharod Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_Kharod_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Kharod Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Kharod_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Kharod weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Kharod_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Kharod weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Kora_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Kora Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_Kora_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Kora Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Kora_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Kora weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Kora_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Kora weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Kora_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Kora Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_Kora_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Kora Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Kora_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Kora weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Kora_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Kora weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Kora_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Kora Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_Kora_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Kora Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Kora_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Kora weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Kora_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Kora weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Lavina_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Lavina Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_Lavina_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Lavina Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Lavina_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Lavina weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Lavina_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Lavina weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Lavina_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Lavina Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_Lavina_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Lavina Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Lavina_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Lavina weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Lavina_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Lavina weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Lavina_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Lavina Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_Lavina_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Lavina Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Lavina_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Lavina weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Lavina_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Lavina weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_M10_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "M10 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_M10_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "M10 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_M10_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the M10 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_M10_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the M10 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_M10_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "M10 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_M10_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "M10 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_M10_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the M10 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_M10_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the M10 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_M10_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "M10 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_M10_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "M10 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_M10_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the M10 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_M10_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the M10 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_M16_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "M16 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_M16_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "M16 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_M16_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the M16 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_M16_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the M16 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_M16_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "M16 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_M16_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "M16 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_M16_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the M16 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_M16_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the M16 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_M16_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "M16 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_M16_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "M16 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_M16_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the M16 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_M16_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the M16 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_M701_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "M701 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_M701_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "M701 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_M701_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the M701 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_M701_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the M701 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_M701_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "M701 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_M701_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "M701 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_M701_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the M701 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_M701_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the M701 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_M701_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "M701 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_M701_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "M701 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_M701_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the M701 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_M701_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the M701 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_M860_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "M860 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_M860_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "M860 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_M860_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the M860 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_M860_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the M860 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_M860_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "M860 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_M860_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "M860 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_M860_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the M860 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_M860_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the M860 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_M860_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "M860 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_M860_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "M860 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_M860_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the M860 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_M860_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the M860 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Mark_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Mark Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_Mark_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Mark Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Mark_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Mark weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Mark_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Mark weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Mark_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Mark Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_Mark_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Mark Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Mark_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Mark weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Mark_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Mark weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Mark_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Mark Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_Mark_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Mark Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Mark_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Mark weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Mark_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Mark weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Obrez_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Obrez Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_Obrez_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Obrez Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Obrez_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Obrez weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Obrez_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Obrez weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Obrez_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Obrez Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_Obrez_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Obrez Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Obrez_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Obrez weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Obrez_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Obrez weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Obrez_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Obrez Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_Obrez_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Obrez Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Obrez_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Obrez weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Obrez_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Obrez weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_PKP_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "PKP Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_PKP_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "PKP Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_PKP_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the PKP weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_PKP_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the PKP weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_PKP_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "PKP Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_PKP_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "PKP Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_PKP_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the PKP weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_PKP_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the PKP weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_PKP_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "PKP Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_PKP_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "PKP Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_PKP_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the PKP weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_PKP_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the PKP weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_PM_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "PM Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_PM_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "PM Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_PM_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the PM weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_PM_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the PM weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_PM_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "PM Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_PM_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "PM Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_PM_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the PM weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_PM_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the PM weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_PM_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "PM Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_PM_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "PM Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_PM_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the PM weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_PM_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the PM weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Ram2_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Ram2 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_Ram2_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Ram2 Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Ram2_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Ram2 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Ram2_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Ram2 weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Ram2_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Ram2 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_Ram2_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Ram2 Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Ram2_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Ram2 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Ram2_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Ram2 weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Ram2_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Ram2 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_Ram2_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Ram2 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Ram2_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Ram2 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Ram2_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Ram2 weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Rhino_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Rhino Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_Rhino_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Rhino Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Rhino_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Rhino weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Rhino_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Rhino weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Rhino_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Rhino Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_Rhino_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Rhino Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Rhino_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Rhino weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Rhino_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Rhino weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Rhino_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Rhino Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_Rhino_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Rhino Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Rhino_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Rhino weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Rhino_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Rhino weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_SKP_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "SKP Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_SKP_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "SKP Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_SKP_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the SKP weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_SKP_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the SKP weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_SKP_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "SKP Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_SKP_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "SKP Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_SKP_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the SKP weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_SKP_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the SKP weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_SKP_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "SKP Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_SKP_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "SKP Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_SKP_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the SKP weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_SKP_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the SKP weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_SPSA_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "SPSA Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_SPSA_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "SPSA Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_SPSA_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the SPSA weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_SPSA_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the SPSA weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_SPSA_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "SPSA Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_SPSA_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "SPSA Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_SPSA_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the SPSA weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_SPSA_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the SPSA weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_SPSA_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "SPSA Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_SPSA_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "SPSA Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_SPSA_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the SPSA weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_SPSA_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the SPSA weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_SVDM_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "SVDM Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_SVDM_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "SVDM Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_SVDM_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the SVDM weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_SVDM_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the SVDM weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_SVDM_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "SVDM Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_SVDM_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "SVDM Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_SVDM_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the SVDM weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_SVDM_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the SVDM weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_SVDM_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "SVDM Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_SVDM_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "SVDM Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_SVDM_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the SVDM weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_SVDM_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the SVDM weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_SVU_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "SVU Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_SVU_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "SVU Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_SVU_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the SVU weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_SVU_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the SVU weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_SVU_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "SVU Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_SVU_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "SVU Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_SVU_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the SVU weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_SVU_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the SVU weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_SVU_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "SVU Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_SVU_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "SVU Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_SVU_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the SVU weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_SVU_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the SVU weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_TOZ_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "TOZ Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_TOZ_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "TOZ Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_TOZ_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the TOZ weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_TOZ_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the TOZ weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_TOZ_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "TOZ Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_TOZ_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "TOZ Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_TOZ_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the TOZ weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_TOZ_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the TOZ weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_TOZ_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "TOZ Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_TOZ_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "TOZ Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_TOZ_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the TOZ weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_TOZ_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the TOZ weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_ThreeLine_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "ThreeLine Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_ThreeLine_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "ThreeLine Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_ThreeLine_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the ThreeLine weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_ThreeLine_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the ThreeLine weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_ThreeLine_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "ThreeLine Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_ThreeLine_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "ThreeLine Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_ThreeLine_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the ThreeLine weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_ThreeLine_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the ThreeLine weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_ThreeLine_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "ThreeLine Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_ThreeLine_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "ThreeLine Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_ThreeLine_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the ThreeLine weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_ThreeLine_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the ThreeLine weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_UDP_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "UDP Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_UDP_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "UDP Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_UDP_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the UDP weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_UDP_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the UDP weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_UDP_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "UDP Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_UDP_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "UDP Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_UDP_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the UDP weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_UDP_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the UDP weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_UDP_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "UDP Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_UDP_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "UDP Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_UDP_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the UDP weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_UDP_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the UDP weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Viper_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Viper Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_Viper_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Viper Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Viper_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Viper weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Viper_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Viper weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Viper_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Viper Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_Viper_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Viper Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Viper_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Viper weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Viper_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Viper weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Viper_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Viper Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_Viper_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Viper Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Viper_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Viper weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Viper_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Viper weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Zubr_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Zubr Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_items_Zubr_Upgrades_Tier_1_name",
+      "languages": {
+        "English": "Zubr Upgrade Blueprint - Tier I"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Zubr_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Zubr weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Zubr_Upgrades_Tier_1_description",
+      "languages": {
+        "English": "Technical schematics for the Zubr weapon family. Unlocks basic weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Zubr_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Zubr Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_items_Zubr_Upgrades_Tier_2_name",
+      "languages": {
+        "English": "Zubr Upgrade Blueprint - Tier II"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Zubr_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Zubr weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Zubr_Upgrades_Tier_2_description",
+      "languages": {
+        "English": "Technical schematics for the Zubr weapon family. Unlocks advanced weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_upgrades_Zubr_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Zubr Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_Zubr_Upgrades_Tier_3_name",
+      "languages": {
+        "English": "Zubr Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_upgrades_Zubr_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Zubr weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    },
+    {
+      "sid": "sid_items_Zubr_Upgrades_Tier_3_description",
+      "languages": {
+        "English": "Technical schematics for the Zubr weapon family. Unlocks high-level weapon upgrades at technicians."
+      }
+    }
+  ]
+}
