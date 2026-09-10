@@ -5,7 +5,7 @@
       "sid": "BPR_BlueprintTemplate_Tier_I",
       "parent_refurl": "../BlueprintPrototypes.cfg",
       "parent_refkey": "BlueprintTemplate",
-      "icon": "Texture2D'/Game/GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest/T_BPR_Blueprint_Tier_I_Icon.T_BPR_Blueprint_Tier_I_Icon'",
+      "icon": "Texture2D'/Testmod/GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest/T_NoData_TestItem_Tier1.T_NoData_TestItem_Tier1'",
       "item_grid_width": 2,
       "item_grid_height": 2,
       "invisible_in_player_inventory": true
@@ -14,7 +14,7 @@
       "sid": "BPR_BlueprintTemplate_Tier_II",
       "parent_refurl": "../BlueprintPrototypes.cfg",
       "parent_refkey": "BlueprintTemplate",
-      "icon": "Texture2D'/Game/GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest/T_BPR_Blueprint_Tier_II_Icon.T_BPR_Blueprint_Tier_II_Icon'",
+      "icon": "Texture2D'/Testmod/GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest/T_NoData_TestItem_Tier2.T_NoData_TestItem_Tier2'",
       "item_grid_width": 2,
       "item_grid_height": 2,
       "invisible_in_player_inventory": true
@@ -23,13 +23,13 @@
       "sid": "BPR_BlueprintTemplate_Tier_III",
       "parent_refurl": "../BlueprintPrototypes.cfg",
       "parent_refkey": "BlueprintTemplate",
-      "icon": "Texture2D'/Game/GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest/T_BPR_Blueprint_Tier_III_Icon.T_BPR_Blueprint_Tier_III_Icon'",
+      "icon": "Texture2D'/Testmod/GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest/T_NoData_TestItem_Tier3.T_NoData_TestItem_Tier3'",
       "item_grid_width": 2,
       "item_grid_height": 2,
       "invisible_in_player_inventory": true
     }
   },
-  "icon_base_path": "/Game/GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest",
+  "icon_base_path": "/Testmod/GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest",
   "debug_icon_name": "NoData_TestItem",
   "icon_names": {
     "AK74": "AKM-74S",
