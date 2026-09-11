@@ -63,7 +63,8 @@ OUTPUT_FILE = (
     / "GameLite"
     / "GameData"
     / "ItemPrototypes"
-    / "ItemPrototypes_patch_BPR_UpgradeKits.cfg"
+    / "ConsumablePrototypes"
+    / "ConsumablePrototypes_patch_BPR_UpgradeKits.cfg"
 )
 
 
@@ -180,7 +181,7 @@ def render_upgrade_kit(
 
     lines = [
         f"{item_sid} : struct.begin "
-        "{refurl=@BaseGame/ItemPrototypes/ConsumablePrototypes.cfg;refkey=Bread}",
+        "{refurl=../ConsumablePrototypes.cfg;refkey=Bread}",
 
         f"    SID = {item_sid}",
         f"    Icon = {icon_reference}",
