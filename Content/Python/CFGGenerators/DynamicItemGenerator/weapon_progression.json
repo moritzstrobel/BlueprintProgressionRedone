@@ -1,0 +1,67 @@
+{
+  "schema_version": 3,
+  "description": "BPR stash progression for individual tier blueprints plus very rare family Upgrade Kits.",
+  "drop_chances": {
+    "tier_1": 0.333333,
+    "tier_2": 0.18,
+    "tier_3": 0.111111,
+    "upgrade_kit": 0.02
+  },
+  "rank_behavior": {
+    "cumulative": true,
+    "vanilla_rank_mapping": {
+      "Newbie": "Newbie",
+      "Experienced": "Experienced",
+      "Veteran": "Veteran",
+      "Master": "Veteran"
+    }
+  },
+  "weapon_progression": {
+    "Newbie": [
+      "PM",
+      "Obrez",
+      "TOZ",
+      "Viper",
+      "AKU",
+      "AK74",
+      "M10",
+      "UDP",
+      "M860",
+      "ThreeLine"
+    ],
+    "Experienced": [
+      "Bucket",
+      "Kora",
+      "Fora",
+      "Fora230",
+      "G37",
+      "Gvintar",
+      "Mark",
+      "M16",
+      "SVDM",
+      "SPSA",
+      "Integral",
+      "Grim",
+      "Lavina",
+      "APB"
+    ],
+    "Veteran": [
+      "Rhino",
+      "Zubr",
+      "D12",
+      "Ram2",
+      "Dnipro",
+      "Kharod",
+      "M701",
+      "SVU",
+      "PKP",
+      "Arev",
+      "GP3A",
+      "SKP"
+    ]
+  },
+  "item_sid_patterns": {
+    "tier_blueprint": "{family}_Upgrades_Tier_{tier}",
+    "upgrade_kit": "BPR_{family}_UpgradeKit"
+  }
+}
