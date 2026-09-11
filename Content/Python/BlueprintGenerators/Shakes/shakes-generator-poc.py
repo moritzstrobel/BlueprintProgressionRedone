@@ -63,15 +63,15 @@ def build_commands(family: str) -> dict[str, str]:
     return {
         "CMD_TIER_I": (
             f"XCreateItemInInventoryByID "
-            f"BPR_{family}_Blueprint_Tier_I 0 1 1"
+            f"{family}_Upgrades_Tier_1 0 1 1"
         ),
         "CMD_TIER_II": (
             f"XCreateItemInInventoryByID "
-            f"BPR_{family}_Blueprint_Tier_II 0 1 1"
+            f"{family}_Upgrades_Tier_2 0 1 1"
         ),
         "CMD_TIER_III": (
             f"XCreateItemInInventoryByID "
-            f"BPR_{family}_Blueprint_Tier_III 0 1 1"
+            f"{family}_Upgrades_Tier_3 0 1 1"
         ),
     }
 
