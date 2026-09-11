@@ -2592,6 +2592,438 @@
       "languages": {
         "English": "Technical schematics for the Zubr weapon family. Unlocks high-level weapon upgrades at technicians."
       }
+    },
+    {
+      "sid": "sid_items_BPR_AK74_UpgradeKit_name",
+      "languages": {
+        "English": "AK74 Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_AK74_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the AK74 weapon family.\n\nContains:\n- AK74 Upgrade Blueprint - Tier I\n- AK74 Upgrade Blueprint - Tier II\n- AK74 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_AKU_UpgradeKit_name",
+      "languages": {
+        "English": "AKU Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_AKU_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the AKU weapon family.\n\nContains:\n- AKU Upgrade Blueprint - Tier I\n- AKU Upgrade Blueprint - Tier II\n- AKU Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_APB_UpgradeKit_name",
+      "languages": {
+        "English": "APB Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_APB_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the APB weapon family.\n\nContains:\n- APB Upgrade Blueprint - Tier I\n- APB Upgrade Blueprint - Tier II\n- APB Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Arev_UpgradeKit_name",
+      "languages": {
+        "English": "Arev Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Arev_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the Arev weapon family.\n\nContains:\n- Arev Upgrade Blueprint - Tier I\n- Arev Upgrade Blueprint - Tier II\n- Arev Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Bucket_UpgradeKit_name",
+      "languages": {
+        "English": "Bucket Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Bucket_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the Bucket weapon family.\n\nContains:\n- Bucket Upgrade Blueprint - Tier I\n- Bucket Upgrade Blueprint - Tier II\n- Bucket Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_D12_UpgradeKit_name",
+      "languages": {
+        "English": "D12 Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_D12_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the D12 weapon family.\n\nContains:\n- D12 Upgrade Blueprint - Tier I\n- D12 Upgrade Blueprint - Tier II\n- D12 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Dnipro_UpgradeKit_name",
+      "languages": {
+        "English": "Dnipro Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Dnipro_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the Dnipro weapon family.\n\nContains:\n- Dnipro Upgrade Blueprint - Tier I\n- Dnipro Upgrade Blueprint - Tier II\n- Dnipro Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Fora_UpgradeKit_name",
+      "languages": {
+        "English": "Fora Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Fora_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the Fora weapon family.\n\nContains:\n- Fora Upgrade Blueprint - Tier I\n- Fora Upgrade Blueprint - Tier II\n- Fora Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Fora230_UpgradeKit_name",
+      "languages": {
+        "English": "Fora230 Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Fora230_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the Fora230 weapon family.\n\nContains:\n- Fora230 Upgrade Blueprint - Tier I\n- Fora230 Upgrade Blueprint - Tier II\n- Fora230 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_G37_UpgradeKit_name",
+      "languages": {
+        "English": "G37 Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_G37_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the G37 weapon family.\n\nContains:\n- G37 Upgrade Blueprint - Tier I\n- G37 Upgrade Blueprint - Tier II\n- G37 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_GP3A_UpgradeKit_name",
+      "languages": {
+        "English": "GP3A Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_GP3A_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the GP3A weapon family.\n\nContains:\n- GP3A Upgrade Blueprint - Tier I\n- GP3A Upgrade Blueprint - Tier II\n- GP3A Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Grim_UpgradeKit_name",
+      "languages": {
+        "English": "Grim Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Grim_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the Grim weapon family.\n\nContains:\n- Grim Upgrade Blueprint - Tier I\n- Grim Upgrade Blueprint - Tier II\n- Grim Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Gvintar_UpgradeKit_name",
+      "languages": {
+        "English": "Gvintar Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Gvintar_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the Gvintar weapon family.\n\nContains:\n- Gvintar Upgrade Blueprint - Tier I\n- Gvintar Upgrade Blueprint - Tier II\n- Gvintar Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Integral_UpgradeKit_name",
+      "languages": {
+        "English": "Integral Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Integral_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the Integral weapon family.\n\nContains:\n- Integral Upgrade Blueprint - Tier I\n- Integral Upgrade Blueprint - Tier II\n- Integral Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Kharod_UpgradeKit_name",
+      "languages": {
+        "English": "Kharod Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Kharod_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the Kharod weapon family.\n\nContains:\n- Kharod Upgrade Blueprint - Tier I\n- Kharod Upgrade Blueprint - Tier II\n- Kharod Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Kora_UpgradeKit_name",
+      "languages": {
+        "English": "Kora Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Kora_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the Kora weapon family.\n\nContains:\n- Kora Upgrade Blueprint - Tier I\n- Kora Upgrade Blueprint - Tier II\n- Kora Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Lavina_UpgradeKit_name",
+      "languages": {
+        "English": "Lavina Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Lavina_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the Lavina weapon family.\n\nContains:\n- Lavina Upgrade Blueprint - Tier I\n- Lavina Upgrade Blueprint - Tier II\n- Lavina Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_M10_UpgradeKit_name",
+      "languages": {
+        "English": "M10 Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_M10_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the M10 weapon family.\n\nContains:\n- M10 Upgrade Blueprint - Tier I\n- M10 Upgrade Blueprint - Tier II\n- M10 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_M16_UpgradeKit_name",
+      "languages": {
+        "English": "M16 Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_M16_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the M16 weapon family.\n\nContains:\n- M16 Upgrade Blueprint - Tier I\n- M16 Upgrade Blueprint - Tier II\n- M16 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_M701_UpgradeKit_name",
+      "languages": {
+        "English": "M701 Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_M701_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the M701 weapon family.\n\nContains:\n- M701 Upgrade Blueprint - Tier I\n- M701 Upgrade Blueprint - Tier II\n- M701 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_M860_UpgradeKit_name",
+      "languages": {
+        "English": "M860 Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_M860_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the M860 weapon family.\n\nContains:\n- M860 Upgrade Blueprint - Tier I\n- M860 Upgrade Blueprint - Tier II\n- M860 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Mark_UpgradeKit_name",
+      "languages": {
+        "English": "Mark Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Mark_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the Mark weapon family.\n\nContains:\n- Mark Upgrade Blueprint - Tier I\n- Mark Upgrade Blueprint - Tier II\n- Mark Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Obrez_UpgradeKit_name",
+      "languages": {
+        "English": "Obrez Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Obrez_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the Obrez weapon family.\n\nContains:\n- Obrez Upgrade Blueprint - Tier I\n- Obrez Upgrade Blueprint - Tier II\n- Obrez Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_PKP_UpgradeKit_name",
+      "languages": {
+        "English": "PKP Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_PKP_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the PKP weapon family.\n\nContains:\n- PKP Upgrade Blueprint - Tier I\n- PKP Upgrade Blueprint - Tier II\n- PKP Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_PM_UpgradeKit_name",
+      "languages": {
+        "English": "PM Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_PM_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the PM weapon family.\n\nContains:\n- PM Upgrade Blueprint - Tier I\n- PM Upgrade Blueprint - Tier II\n- PM Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Ram2_UpgradeKit_name",
+      "languages": {
+        "English": "Ram2 Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Ram2_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the Ram2 weapon family.\n\nContains:\n- Ram2 Upgrade Blueprint - Tier I\n- Ram2 Upgrade Blueprint - Tier II\n- Ram2 Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Rhino_UpgradeKit_name",
+      "languages": {
+        "English": "Rhino Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Rhino_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the Rhino weapon family.\n\nContains:\n- Rhino Upgrade Blueprint - Tier I\n- Rhino Upgrade Blueprint - Tier II\n- Rhino Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_SKP_UpgradeKit_name",
+      "languages": {
+        "English": "SKP Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_SKP_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the SKP weapon family.\n\nContains:\n- SKP Upgrade Blueprint - Tier I\n- SKP Upgrade Blueprint - Tier II\n- SKP Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_SPSA_UpgradeKit_name",
+      "languages": {
+        "English": "SPSA Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_SPSA_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the SPSA weapon family.\n\nContains:\n- SPSA Upgrade Blueprint - Tier I\n- SPSA Upgrade Blueprint - Tier II\n- SPSA Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_SVDM_UpgradeKit_name",
+      "languages": {
+        "English": "SVDM Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_SVDM_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the SVDM weapon family.\n\nContains:\n- SVDM Upgrade Blueprint - Tier I\n- SVDM Upgrade Blueprint - Tier II\n- SVDM Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_SVU_UpgradeKit_name",
+      "languages": {
+        "English": "SVU Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_SVU_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the SVU weapon family.\n\nContains:\n- SVU Upgrade Blueprint - Tier I\n- SVU Upgrade Blueprint - Tier II\n- SVU Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_TOZ_UpgradeKit_name",
+      "languages": {
+        "English": "TOZ Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_TOZ_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the TOZ weapon family.\n\nContains:\n- TOZ Upgrade Blueprint - Tier I\n- TOZ Upgrade Blueprint - Tier II\n- TOZ Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_ThreeLine_UpgradeKit_name",
+      "languages": {
+        "English": "ThreeLine Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_ThreeLine_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the ThreeLine weapon family.\n\nContains:\n- ThreeLine Upgrade Blueprint - Tier I\n- ThreeLine Upgrade Blueprint - Tier II\n- ThreeLine Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_UDP_UpgradeKit_name",
+      "languages": {
+        "English": "UDP Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_UDP_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the UDP weapon family.\n\nContains:\n- UDP Upgrade Blueprint - Tier I\n- UDP Upgrade Blueprint - Tier II\n- UDP Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Viper_UpgradeKit_name",
+      "languages": {
+        "English": "Viper Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Viper_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the Viper weapon family.\n\nContains:\n- Viper Upgrade Blueprint - Tier I\n- Viper Upgrade Blueprint - Tier II\n- Viper Upgrade Blueprint - Tier III"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Zubr_UpgradeKit_name",
+      "languages": {
+        "English": "Zubr Upgrade Blueprint Kit"
+      }
+    },
+    {
+      "sid": "sid_items_BPR_Zubr_UpgradeKit_description",
+      "languages": {
+        "English": "A complete set of technical schematics for the Zubr weapon family.\n\nContains:\n- Zubr Upgrade Blueprint - Tier I\n- Zubr Upgrade Blueprint - Tier II\n- Zubr Upgrade Blueprint - Tier III"
+      }
     }
   ]
 }

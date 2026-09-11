@@ -1,0 +1,184 @@
+BPR UpgradeKit - Console Commands
+=================================
+
+Copy the three commands for the matching generated Blueprint.
+
+=== BPR_AK74_UpgradeKit ===
+XCreateItemInInventoryByID AK74_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID AK74_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID AK74_Upgrades_Tier_3 0 1 1
+
+=== BPR_AKU_UpgradeKit ===
+XCreateItemInInventoryByID AKU_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID AKU_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID AKU_Upgrades_Tier_3 0 1 1
+
+=== BPR_APB_UpgradeKit ===
+XCreateItemInInventoryByID APB_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID APB_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID APB_Upgrades_Tier_3 0 1 1
+
+=== BPR_Arev_UpgradeKit ===
+XCreateItemInInventoryByID Arev_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID Arev_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID Arev_Upgrades_Tier_3 0 1 1
+
+=== BPR_Bucket_UpgradeKit ===
+XCreateItemInInventoryByID Bucket_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID Bucket_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID Bucket_Upgrades_Tier_3 0 1 1
+
+=== BPR_D12_UpgradeKit ===
+XCreateItemInInventoryByID D12_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID D12_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID D12_Upgrades_Tier_3 0 1 1
+
+=== BPR_Dnipro_UpgradeKit ===
+XCreateItemInInventoryByID Dnipro_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID Dnipro_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID Dnipro_Upgrades_Tier_3 0 1 1
+
+=== BPR_Fora_UpgradeKit ===
+XCreateItemInInventoryByID Fora_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID Fora_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID Fora_Upgrades_Tier_3 0 1 1
+
+=== BPR_Fora230_UpgradeKit ===
+XCreateItemInInventoryByID Fora230_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID Fora230_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID Fora230_Upgrades_Tier_3 0 1 1
+
+=== BPR_G37_UpgradeKit ===
+XCreateItemInInventoryByID G37_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID G37_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID G37_Upgrades_Tier_3 0 1 1
+
+=== BPR_GP3A_UpgradeKit ===
+XCreateItemInInventoryByID GP3A_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID GP3A_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID GP3A_Upgrades_Tier_3 0 1 1
+
+=== BPR_Grim_UpgradeKit ===
+XCreateItemInInventoryByID Grim_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID Grim_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID Grim_Upgrades_Tier_3 0 1 1
+
+=== BPR_Gvintar_UpgradeKit ===
+XCreateItemInInventoryByID Gvintar_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID Gvintar_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID Gvintar_Upgrades_Tier_3 0 1 1
+
+=== BPR_Integral_UpgradeKit ===
+XCreateItemInInventoryByID Integral_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID Integral_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID Integral_Upgrades_Tier_3 0 1 1
+
+=== BPR_Kharod_UpgradeKit ===
+XCreateItemInInventoryByID Kharod_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID Kharod_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID Kharod_Upgrades_Tier_3 0 1 1
+
+=== BPR_Kora_UpgradeKit ===
+XCreateItemInInventoryByID Kora_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID Kora_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID Kora_Upgrades_Tier_3 0 1 1
+
+=== BPR_Lavina_UpgradeKit ===
+XCreateItemInInventoryByID Lavina_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID Lavina_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID Lavina_Upgrades_Tier_3 0 1 1
+
+=== BPR_M10_UpgradeKit ===
+XCreateItemInInventoryByID M10_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID M10_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID M10_Upgrades_Tier_3 0 1 1
+
+=== BPR_M16_UpgradeKit ===
+XCreateItemInInventoryByID M16_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID M16_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID M16_Upgrades_Tier_3 0 1 1
+
+=== BPR_M701_UpgradeKit ===
+XCreateItemInInventoryByID M701_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID M701_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID M701_Upgrades_Tier_3 0 1 1
+
+=== BPR_M860_UpgradeKit ===
+XCreateItemInInventoryByID M860_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID M860_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID M860_Upgrades_Tier_3 0 1 1
+
+=== BPR_Mark_UpgradeKit ===
+XCreateItemInInventoryByID Mark_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID Mark_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID Mark_Upgrades_Tier_3 0 1 1
+
+=== BPR_Obrez_UpgradeKit ===
+XCreateItemInInventoryByID Obrez_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID Obrez_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID Obrez_Upgrades_Tier_3 0 1 1
+
+=== BPR_PKP_UpgradeKit ===
+XCreateItemInInventoryByID PKP_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID PKP_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID PKP_Upgrades_Tier_3 0 1 1
+
+=== BPR_PM_UpgradeKit ===
+XCreateItemInInventoryByID PM_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID PM_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID PM_Upgrades_Tier_3 0 1 1
+
+=== BPR_Ram2_UpgradeKit ===
+XCreateItemInInventoryByID Ram2_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID Ram2_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID Ram2_Upgrades_Tier_3 0 1 1
+
+=== BPR_Rhino_UpgradeKit ===
+XCreateItemInInventoryByID Rhino_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID Rhino_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID Rhino_Upgrades_Tier_3 0 1 1
+
+=== BPR_SKP_UpgradeKit ===
+XCreateItemInInventoryByID SKP_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID SKP_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID SKP_Upgrades_Tier_3 0 1 1
+
+=== BPR_SPSA_UpgradeKit ===
+XCreateItemInInventoryByID SPSA_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID SPSA_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID SPSA_Upgrades_Tier_3 0 1 1
+
+=== BPR_SVDM_UpgradeKit ===
+XCreateItemInInventoryByID SVDM_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID SVDM_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID SVDM_Upgrades_Tier_3 0 1 1
+
+=== BPR_SVU_UpgradeKit ===
+XCreateItemInInventoryByID SVU_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID SVU_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID SVU_Upgrades_Tier_3 0 1 1
+
+=== BPR_TOZ_UpgradeKit ===
+XCreateItemInInventoryByID TOZ_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID TOZ_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID TOZ_Upgrades_Tier_3 0 1 1
+
+=== BPR_ThreeLine_UpgradeKit ===
+XCreateItemInInventoryByID ThreeLine_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID ThreeLine_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID ThreeLine_Upgrades_Tier_3 0 1 1
+
+=== BPR_UDP_UpgradeKit ===
+XCreateItemInInventoryByID UDP_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID UDP_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID UDP_Upgrades_Tier_3 0 1 1
+
+=== BPR_Viper_UpgradeKit ===
+XCreateItemInInventoryByID Viper_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID Viper_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID Viper_Upgrades_Tier_3 0 1 1
+
+=== BPR_Zubr_UpgradeKit ===
+XCreateItemInInventoryByID Zubr_Upgrades_Tier_1 0 1 1
+XCreateItemInInventoryByID Zubr_Upgrades_Tier_2 0 1 1
+XCreateItemInInventoryByID Zubr_Upgrades_Tier_3 0 1 1

@@ -14,8 +14,6 @@ CONFIG_FILE = SCRIPT_DIR / "shakes.json"
 TEMPLATE_ASSET = "/Testmod/Shakes/BPR_PM_UpgradeKit_Base"
 OUTPUT_FOLDER = "/Testmod/Shakes"
 
-TEMPLATE_FAMILY = "PM"
-
 
 # =============================================================================
 # Helpers
@@ -59,23 +57,6 @@ def validate_config(config: dict) -> None:
         )
 
 
-def build_commands(family: str) -> dict[str, str]:
-    return {
-        "CMD_TIER_I": (
-            f"XCreateItemInInventoryByID "
-            f"{family}_Upgrades_Tier_1 0 1 1"
-        ),
-        "CMD_TIER_II": (
-            f"XCreateItemInInventoryByID "
-            f"{family}_Upgrades_Tier_2 0 1 1"
-        ),
-        "CMD_TIER_III": (
-            f"XCreateItemInInventoryByID "
-            f"{family}_Upgrades_Tier_3 0 1 1"
-        ),
-    }
-
-
 def build_target_asset(family: str) -> str:
     return f"{OUTPUT_FOLDER}/BPR_{family}_UpgradeKit"
 
@@ -85,15 +66,23 @@ def build_target_asset(family: str) -> str:
 # =============================================================================
 
 def generate_blueprint(family: str) -> None:
+    """
+    Duplicate the base UpgradeKit Blueprint for one weapon family.
+
+    Important:
+    - The complete EventGraph is copied from BPR_PM_UpgradeKit_Base.
+    - Literal Execute Console Command values are NOT modified here.
+    - The template values/placeholders remain unchanged and can be edited
+      manually in the generated Blueprint afterwards.
+    """
     target_asset = build_target_asset(family)
-    commands = build_commands(family)
 
     log("----------------------------------------")
     log(f"Generating family: {family}")
     log(f"Target: {target_asset}")
 
     # -------------------------------------------------------------------------
-    # Existing asset
+    # Delete existing generated asset
     # -------------------------------------------------------------------------
 
     if unreal.EditorAssetLibrary.does_asset_exist(target_asset):
@@ -108,6 +97,9 @@ def generate_blueprint(family: str) -> None:
 
     # -------------------------------------------------------------------------
     # Duplicate template
+    #
+    # The duplicated Blueprint keeps the complete EventGraph, including the
+    # three Execute Console Command nodes and all existing connections.
     # -------------------------------------------------------------------------
 
     duplicated = unreal.EditorAssetLibrary.duplicate_asset(
@@ -123,7 +115,7 @@ def generate_blueprint(family: str) -> None:
         )
 
     # -------------------------------------------------------------------------
-    # Load Blueprint
+    # Load / compile / save
     # -------------------------------------------------------------------------
 
     blueprint = unreal.load_asset(target_asset)
@@ -135,56 +127,9 @@ def generate_blueprint(family: str) -> None:
 
     log(f"Loaded Blueprint: {blueprint.get_name()}")
 
-    # -------------------------------------------------------------------------
-    # Compile before accessing GeneratedClass
-    # -------------------------------------------------------------------------
-
+    # No graph manipulation is performed here.
+    # Compiling verifies that the duplicated graph is still valid.
     unreal.BlueprintEditorLibrary.compile_blueprint(blueprint)
-
-    generated_class = blueprint.generated_class()
-
-    if generated_class is None:
-        raise RuntimeError(
-            f"Blueprint has no GeneratedClass:\n{target_asset}"
-        )
-
-    cdo = unreal.get_default_object(generated_class)
-
-    if cdo is None:
-        raise RuntimeError(
-            f"Could not get Class Default Object:\n{target_asset}"
-        )
-
-    # -------------------------------------------------------------------------
-    # Set variable defaults
-    # -------------------------------------------------------------------------
-
-    for variable_name, command in commands.items():
-        log(f"{variable_name} = {command}")
-
-        try:
-            cdo.set_editor_property(
-                variable_name,
-                command,
-            )
-
-        except Exception as exc:
-            raise RuntimeError(
-                f"Could not set Blueprint variable "
-                f"'{variable_name}' for family '{family}'.\n"
-                f"Command: {command}\n"
-                f"Error: {exc}"
-            )
-
-    # -------------------------------------------------------------------------
-    # Compile again after modifying defaults
-    # -------------------------------------------------------------------------
-
-    unreal.BlueprintEditorLibrary.compile_blueprint(blueprint)
-
-    # -------------------------------------------------------------------------
-    # Save
-    # -------------------------------------------------------------------------
 
     saved = unreal.EditorAssetLibrary.save_asset(
         target_asset,
@@ -197,6 +142,10 @@ def generate_blueprint(family: str) -> None:
         )
 
     log(f"Generated successfully: {target_asset}")
+    log(
+        f"Manual commands still required for {family}: "
+        f"{family}_Upgrades_Tier_1 / Tier_2 / Tier_3"
+    )
 
 
 # =============================================================================
@@ -228,23 +177,14 @@ def main() -> None:
     families = config["weapon_families"]
 
     log(f"Weapon families: {len(families)}")
+    log(
+        "Mode: duplicate template only; "
+        "console commands are kept from the template."
+    )
 
     generated_count = 0
-    skipped_count = 0
 
     for family in families:
-
-        # PM currently already exists as the manually created/original asset.
-        # The _Base Blueprint is only the generator template.
-        if family == TEMPLATE_FAMILY:
-            log("----------------------------------------")
-            log(
-                f"Skipping template family '{family}'. "
-                f"Existing BPR_{family}_UpgradeKit will not be overwritten."
-            )
-            skipped_count += 1
-            continue
-
         generate_blueprint(family)
         generated_count += 1
 
@@ -254,7 +194,11 @@ def main() -> None:
     log("========================================")
     log(f"Families in config: {len(families)}")
     log(f"Generated:          {generated_count}")
-    log(f"Skipped:            {skipped_count}")
+    log("")
+    log(
+        "Next step: edit the three Execute Console Command values "
+        "manually in each generated Blueprint."
+    )
 
 
 if __name__ == "__main__":
