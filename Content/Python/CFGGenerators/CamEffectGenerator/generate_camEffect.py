@@ -88,9 +88,11 @@ def render_family_effect(family: str) -> str:
 
 	lines = [
 		f"{effect_sid} : struct.begin "
-		"{refurl=@BaseGame/EffectPrototypes.cfg;"
-		"refkey=BPR_PM_UpgradeKit_ShakeEffect}",
+		"{refurl=@BaseGame/EffectPrototypes.cfg;refkey=[0]}",
 		f"   SID = {effect_sid}",
+		"   Type = EEffectType::CameraShake",
+		"   Positive = EBeneficial::Negative",
+		"   CameraShakeEffectSubtype = ECameraShakeEffectSubtype::AddEffect",
 		f"   CameraShakePrototypeSID = {shake_sid}",
 		"struct.end",
 	]
