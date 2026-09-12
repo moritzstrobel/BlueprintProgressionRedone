@@ -1,61 +1,29 @@
 #!/usr/bin/env python3
-"""
-Generate UpgradePrototypes_patch_BPR.cfg from upgrade_blueprint_tiers.json.
-
-Expected layout:
-
-Content/
-├─ GameLite/
-│  └─ GameData/
-│     └─ UpgradePrototypes/
-│        └─ UpgradePrototypes_patch_BPR.cfg
-│
-└─ Python/
-   └─ CFGGenerators/
-      └─ UpgradeGenerator/
-         ├─ upgrade_blueprint_tiers.json
-         └─ generate_upgrade_blueprint_tiers.py
-"""
+"""Generate vanilla upgrade patches that require BPR blueprint tiers."""
 
 from __future__ import annotations
 
-import json
+import sys
 from pathlib import Path
 
-
-# =============================================================================
-# Paths
-# =============================================================================
-
 SCRIPT_DIR = Path(__file__).resolve().parent
-CONTENT_DIR = SCRIPT_DIR.parents[2]
+PYTHON_ROOT = SCRIPT_DIR.parents[2]
+if str(PYTHON_ROOT) not in sys.path:
+    sys.path.insert(0, str(PYTHON_ROOT))
 
+from Common.bpr_common import get_weapon_families, load_json, load_weapon_progression, tier_blueprint_sid
+
+CONTENT_DIR = PYTHON_ROOT.parent
 CONFIG_PATH = SCRIPT_DIR / "upgrade_blueprint_tiers.json"
-
-OUTPUT_PATH = (
-    CONTENT_DIR
-    / "GameLite"
-    / "GameData"
-    / "UpgradePrototypes"
-    / "UpgradePrototypes_patch_BPR.cfg"
-)
+OUTPUT_PATH = CONTENT_DIR / "GameLite" / "GameData" / "UpgradePrototypes" / "UpgradePrototypes_patch_BPR.cfg"
 
 
-# =============================================================================
-# Helpers
-# =============================================================================
-
-def load_config(path: Path) -> dict:
-    with path.open("r", encoding="utf-8") as file:
-        return json.load(file)
-
-
-def validate_config(config: dict) -> None:
+def validate_config(config: dict, weapon_config: dict) -> None:
     upgrades = config.get("upgrades")
-
     if not isinstance(upgrades, list) or not upgrades:
         raise ValueError("Missing or invalid 'upgrades' list.")
 
+    known_families = set(get_weapon_families(weapon_config))
     seen_upgrade_sids: set[str] = set()
 
     for index, item in enumerate(upgrades, start=1):
@@ -65,63 +33,39 @@ def validate_config(config: dict) -> None:
 
         if not upgrade_sid:
             raise ValueError(f"Entry #{index} has no upgrade_sid.")
-
         if upgrade_sid in seen_upgrade_sids:
             raise ValueError(f"Duplicate upgrade SID: {upgrade_sid}")
-
-        if not family:
-            raise ValueError(
-                f"Upgrade '{upgrade_sid}' has no family."
-            )
-
+        if family not in known_families:
+            raise ValueError(f"Upgrade '{upgrade_sid}' references unknown family '{family}'.")
         if blueprint_tier not in (1, 2, 3):
             raise ValueError(
-                f"Upgrade '{upgrade_sid}' has invalid blueprint_tier: "
-                f"{blueprint_tier}"
+                f"Upgrade '{upgrade_sid}' has invalid blueprint_tier: {blueprint_tier}"
             )
-
         seen_upgrade_sids.add(upgrade_sid)
 
 
-def render_upgrade(item: dict) -> str:
+def render_upgrade(item: dict, weapon_config: dict) -> str:
     upgrade_sid = item["upgrade_sid"]
-    family = item["family"]
-    tier = item["blueprint_tier"]
-
-    blueprint_sid = f"{family}_Upgrades_Tier_{tier}"
-
-    lines = [
+    blueprint_sid = tier_blueprint_sid(
+        weapon_config,
+        item["family"],
+        item["blueprint_tier"],
+    )
+    return "\n".join([
         f"{upgrade_sid} : struct.begin {{bpatch}}",
         "   RequiredItemPrototypeSIDs : struct.begin",
         f"      [0] = {blueprint_sid}",
         "   struct.end",
         "struct.end",
-    ]
+    ])
 
-    return "\n".join(lines)
-
-
-# =============================================================================
-# Main
-# =============================================================================
 
 def main() -> None:
-    print("Upgrade Blueprint Tier CFG Generator")
-    print("------------------------------------")
-    print(f"Config: {CONFIG_PATH}")
-    print(f"Output: {OUTPUT_PATH}")
-    print()
-
-    if not CONFIG_PATH.exists():
-        raise FileNotFoundError(
-            f"Config file not found:\n{CONFIG_PATH}"
-        )
-
-    config = load_config(CONFIG_PATH)
-    validate_config(config)
+    config = load_json(CONFIG_PATH)
+    weapon_config = load_weapon_progression()
+    validate_config(config, weapon_config)
 
     upgrades = config["upgrades"]
-
     tier_counts = {1: 0, 2: 0, 3: 0}
     family_counts: dict[str, int] = {}
 
@@ -129,21 +73,20 @@ def main() -> None:
         "// -----------------------------------------------------------------------------",
         "// AUTO-GENERATED FILE - DO NOT EDIT BY HAND",
         "//",
-        "// Source: Python/CFGGenerators/UpgradeGenerator/upgrade_blueprint_tiers.json",
+        "// Sources:",
+        "//   Python/Config/weapon_progression.json",
+        "//   Python/CFGGenerators/Upgrades/upgrade_blueprint_tiers.json",
         "// Generated by: generate_upgrade_blueprint_tiers.py",
         "// -----------------------------------------------------------------------------",
         "",
     ]
 
     current_family = None
-
     for item in upgrades:
         family = item["family"]
-
         if family != current_family:
             if current_family is not None:
                 lines.append("")
-
             lines.extend([
                 "// ------------------------------------------------------------",
                 f"// {family}",
@@ -151,33 +94,22 @@ def main() -> None:
             ])
             current_family = family
 
-        lines.append(render_upgrade(item))
+        lines.append(render_upgrade(item, weapon_config))
         lines.append("")
-
         tier = item["blueprint_tier"]
         tier_counts[tier] += 1
         family_counts[family] = family_counts.get(family, 0) + 1
 
-    output = "\n".join(lines).rstrip() + "\n"
+    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT_PATH.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
-    OUTPUT_PATH.parent.mkdir(
-        parents=True,
-        exist_ok=True
-    )
-
-    OUTPUT_PATH.write_text(
-        output,
-        encoding="utf-8"
-    )
-
-    print("Generation successful.")
-    print()
+    print("Upgrade Blueprint Tier CFG Generator")
+    print("------------------------------------")
     print(f"Upgrade entries: {len(upgrades)}")
     print(f"Families:        {len(family_counts)}")
     print(f"Tier 1:          {tier_counts[1]}")
     print(f"Tier 2:          {tier_counts[2]}")
     print(f"Tier 3:          {tier_counts[3]}")
-    print()
     print(f"Written to:\n{OUTPUT_PATH}")
 
 
