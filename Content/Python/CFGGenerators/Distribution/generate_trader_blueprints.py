@@ -122,7 +122,7 @@ def render_trader(trader_name: str, trader: dict, blueprints: list[str], default
         "",
         "    ItemGenerator : struct.begin {bpatch}",
         "",
-        "        [*] : struct.begin {bpatch}",
+        "        [*] : struct.begin",
         f"            Category = {category}",
         f"            PlayerRank = {', '.join(ranks)}",
         f"            bAllowSameCategoryGeneration = {'true' if allow_same else 'false'}",
