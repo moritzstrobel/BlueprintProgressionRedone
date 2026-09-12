@@ -3,7 +3,7 @@
   "templates": {
     "1": {
       "sid": "BPR_BlueprintTemplate_Tier_I",
-      "parent_refurl": "../BlueprintPrototypes.cfg",
+      "parent_refurl": "@BaseGame/ItemPrototypes/BlueprintPrototypes.cfg",
       "parent_refkey": "BlueprintTemplate",
       "icon": "Texture2D'/Testmod/GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest/T_NoData_TestItem_Tier1.T_NoData_TestItem_Tier1'",
       "item_grid_width": 2,
@@ -12,7 +12,7 @@
     },
     "2": {
       "sid": "BPR_BlueprintTemplate_Tier_II",
-      "parent_refurl": "../BlueprintPrototypes.cfg",
+      "parent_refurl": "@BaseGame/ItemPrototypes/BlueprintPrototypes.cfg",
       "parent_refkey": "BlueprintTemplate",
       "icon": "Texture2D'/Testmod/GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest/T_NoData_TestItem_Tier2.T_NoData_TestItem_Tier2'",
       "item_grid_width": 2,
@@ -21,7 +21,7 @@
     },
     "3": {
       "sid": "BPR_BlueprintTemplate_Tier_III",
-      "parent_refurl": "../BlueprintPrototypes.cfg",
+      "parent_refurl": "@BaseGame/ItemPrototypes/BlueprintPrototypes.cfg",
       "parent_refkey": "BlueprintTemplate",
       "icon": "Texture2D'/Testmod/GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest/T_NoData_TestItem_Tier3.T_NoData_TestItem_Tier3'",
       "item_grid_width": 2,
