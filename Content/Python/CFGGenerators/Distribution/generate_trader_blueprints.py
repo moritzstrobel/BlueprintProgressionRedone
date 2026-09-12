@@ -114,6 +114,10 @@ def render_trader(trader_name: str, trader: dict, blueprints: list[str], default
         "ERank::Newbie", "ERank::Experienced", "ERank::Veteran", "ERank::Master"
     ]))
     allow_same = trader.get("allow_same_category_generation", defaults.get("allow_same_category_generation", True))
+
+    # Lootable Zone uses explicit free ItemGenerator indices 86-89, one per rank.
+    # Keep the same layout so the patch adds dedicated entries without touching
+    # the vanilla trader slots that contain ammo and the other stock categories.
     start_index = int(trader.get("start_index", defaults.get("start_index", 86)))
 
     lines = [
