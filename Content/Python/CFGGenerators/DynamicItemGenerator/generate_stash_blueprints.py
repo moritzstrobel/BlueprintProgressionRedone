@@ -9,7 +9,7 @@ Config:
     Content/Python/CFGGenerators/DynamicItemGenerator/weapon_progression.json
 
 Generated files:
-    Content/GameLite/GameData/ItemGeneratorPrototypes/
+    Content/GameLite/ModGameData/Testmod/ItemGeneratorPrototypes/
         BPR_Stashes_ItemGeneratorPrototypes.cfg
 
     Content/GameLite/GameData/ItemGeneratorPrototypes/DynamicItemGenerator/
@@ -47,20 +47,28 @@ CONFIG_FILE = SCRIPT_DIR / "weapon_progression.json"
 # Content
 CONTENT_DIR = SCRIPT_DIR.parents[2]
 
-ITEM_GENERATOR_DIR = (
+BASEGAME_ITEM_GENERATOR_DIR = (
     CONTENT_DIR
     / "GameLite"
     / "GameData"
     / "ItemGeneratorPrototypes"
 )
 
+MOD_ITEM_GENERATOR_DIR = (
+    CONTENT_DIR
+    / "GameLite"
+    / "ModGameData"
+    / "Testmod"
+    / "ItemGeneratorPrototypes"
+)
+
 DYNAMIC_ITEM_GENERATOR_DIR = (
-    ITEM_GENERATOR_DIR
+    BASEGAME_ITEM_GENERATOR_DIR
     / "DynamicItemGenerator"
 )
 
 GENERATORS_OUTPUT = (
-    ITEM_GENERATOR_DIR
+    MOD_ITEM_GENERATOR_DIR
     / "BPR_Stashes_ItemGeneratorPrototypes.cfg"
 )
 
@@ -74,9 +82,18 @@ PATCH_OUTPUT = (
 # Constants
 # =============================================================================
 
-RANK_ORDER = ("Newbie", "Experienced", "Veteran")
+RANK_ORDER = (
+    "Newbie",
+    "Experienced",
+    "Veteran",
+)
 
-VANILLA_RANKS = ("Newbie", "Experienced", "Veteran", "Master")
+VANILLA_RANKS = (
+    "Newbie",
+    "Experienced",
+    "Veteran",
+    "Master",
+)
 
 TIER_KEYS = (
     ("tier_1", 1),
@@ -103,7 +120,9 @@ def load_config() -> dict:
         )
 
     data = json.loads(
-        CONFIG_FILE.read_text(encoding="utf-8")
+        CONFIG_FILE.read_text(
+            encoding="utf-8"
+        )
     )
 
     required = (
@@ -120,7 +139,9 @@ def load_config() -> dict:
             )
 
     for rank in RANK_ORDER:
-        if rank not in data["weapon_progression"]:
+        if rank not in data[
+            "weapon_progression"
+        ]:
             raise ValueError(
                 f"Missing weapon progression rank: {rank}"
             )
@@ -131,21 +152,30 @@ def load_config() -> dict:
         "tier_3",
         "upgrade_kit",
     ):
-        if chance_key not in data["drop_chances"]:
+        if chance_key not in data[
+            "drop_chances"
+        ]:
             raise ValueError(
                 f"Missing drop chance: {chance_key}"
             )
 
         chance = float(
-            data["drop_chances"][chance_key]
+            data[
+                "drop_chances"
+            ][
+                chance_key
+            ]
         )
 
         if not 0.0 <= chance <= 1.0:
             raise ValueError(
-                f"{chance_key} must be between 0.0 and 1.0, got {chance}"
+                f"{chance_key} must be between "
+                f"0.0 and 1.0, got {chance}"
             )
 
-    mapping = data["rank_behavior"].get(
+    mapping = data[
+        "rank_behavior"
+    ].get(
         "vanilla_rank_mapping",
         {},
     )
@@ -153,15 +183,18 @@ def load_config() -> dict:
     for vanilla_rank in VANILLA_RANKS:
         if vanilla_rank not in mapping:
             raise ValueError(
-                f"Missing vanilla rank mapping: {vanilla_rank}"
+                f"Missing vanilla rank mapping: "
+                f"{vanilla_rank}"
             )
 
-        logical_rank = mapping[vanilla_rank]
+        logical_rank = mapping[
+            vanilla_rank
+        ]
 
         if logical_rank not in RANK_ORDER:
             raise ValueError(
-                f"Invalid logical rank mapping for {vanilla_rank}: "
-                f"{logical_rank}"
+                f"Invalid logical rank mapping for "
+                f"{vanilla_rank}: {logical_rank}"
             )
 
     return data
@@ -175,14 +208,20 @@ def cumulative_families(
 
     for current_rank in RANK_ORDER:
         families.extend(
-            data["weapon_progression"][current_rank]
+            data[
+                "weapon_progression"
+            ][
+                current_rank
+            ]
         )
 
         if current_rank == rank:
             break
 
     # Preserve configured order and remove duplicates.
-    return list(dict.fromkeys(families))
+    return list(
+        dict.fromkeys(families)
+    )
 
 
 def tier_item_sid(
@@ -190,7 +229,11 @@ def tier_item_sid(
     family: str,
     tier: int,
 ) -> str:
-    pattern = data["item_sid_patterns"]["tier_blueprint"]
+    pattern = data[
+        "item_sid_patterns"
+    ][
+        "tier_blueprint"
+    ]
 
     return pattern.format(
         family=family,
@@ -202,7 +245,11 @@ def upgrade_kit_sid(
     data: dict,
     family: str,
 ) -> str:
-    pattern = data["item_sid_patterns"]["upgrade_kit"]
+    pattern = data[
+        "item_sid_patterns"
+    ][
+        "upgrade_kit"
+    ]
 
     return pattern.format(
         family=family,
@@ -216,8 +263,10 @@ def upgrade_kit_sid(
 def render_header(
     output_path: Path,
 ) -> list[str]:
-    relative_path = output_path.relative_to(
-        CONTENT_DIR
+    relative_path = (
+        output_path.relative_to(
+            CONTENT_DIR
+        )
     )
 
     return [
@@ -296,7 +345,9 @@ def render_rank_roll_generator(
     rank: str,
     data: dict,
 ) -> list[str]:
-    sid = f"BPR_StashRolls_{rank}"
+    sid = (
+        f"BPR_StashRolls_{rank}"
+    )
 
     lines = [
         f"{sid} : struct.begin "
@@ -308,11 +359,16 @@ def render_rank_roll_generator(
     # Independent rolls for the three normal blueprint tiers.
     for chance_key, tier in TIER_KEYS:
         pool_sid = (
-            f"BPR_StashBlueprint_{rank}_Tier_{tier}"
+            f"BPR_StashBlueprint_"
+            f"{rank}_Tier_{tier}"
         )
 
         chance = float(
-            data["drop_chances"][chance_key]
+            data[
+                "drop_chances"
+            ][
+                chance_key
+            ]
         )
 
         lines.extend(
@@ -328,7 +384,11 @@ def render_rank_roll_generator(
     )
 
     kit_chance = float(
-        data["drop_chances"]["upgrade_kit"]
+        data[
+            "drop_chances"
+        ][
+            "upgrade_kit"
+        ]
     )
 
     lines.extend(
@@ -391,7 +451,10 @@ def generate_generators(
 
             lines.extend(
                 render_item_pool(
-                    f"BPR_StashBlueprint_{rank}_Tier_{tier}",
+                    (
+                        f"BPR_StashBlueprint_"
+                        f"{rank}_Tier_{tier}"
+                    ),
                     item_sids,
                 )
             )
@@ -426,7 +489,10 @@ def generate_generators(
             )
         )
 
-    return "\n".join(lines).rstrip() + "\n"
+    return (
+        "\n".join(lines).rstrip()
+        + "\n"
+    )
 
 
 # =============================================================================
@@ -436,7 +502,9 @@ def generate_generators(
 def generate_patch(
     data: dict,
 ) -> str:
-    mapping = data["rank_behavior"][
+    mapping = data[
+        "rank_behavior"
+    ][
         "vanilla_rank_mapping"
     ]
 
@@ -471,8 +539,11 @@ def generate_patch(
                 f"         PlayerRank = ERank::{vanilla_rank}",
                 "         PossibleItems : struct.begin",
                 "            [*] : struct.begin",
-                f"               ItemGeneratorPrototypeSID = "
-                f"BPR_StashRolls_{logical_rank}",
+                (
+                    "               "
+                    "ItemGeneratorPrototypeSID = "
+                    f"BPR_StashRolls_{logical_rank}"
+                ),
                 "               Chance = 1",
                 "               MinCount = 1",
                 "               MaxCount = 1",
@@ -487,7 +558,10 @@ def generate_patch(
             "",
         ])
 
-    return "\n".join(lines).rstrip() + "\n"
+    return (
+        "\n".join(lines).rstrip()
+        + "\n"
+    )
 
 
 # =============================================================================
@@ -497,7 +571,7 @@ def generate_patch(
 def main() -> None:
     data = load_config()
 
-    ITEM_GENERATOR_DIR.mkdir(
+    MOD_ITEM_GENERATOR_DIR.mkdir(
         parents=True,
         exist_ok=True,
     )
@@ -508,24 +582,43 @@ def main() -> None:
     )
 
     GENERATORS_OUTPUT.write_text(
-        generate_generators(data),
+        generate_generators(
+            data
+        ),
         encoding="utf-8",
     )
 
     PATCH_OUTPUT.write_text(
-        generate_patch(data),
+        generate_patch(
+            data
+        ),
         encoding="utf-8",
     )
 
-    print("BPR Dynamic Item Generator")
-    print("--------------------------")
-    print(f"Config:")
-    print(f"  {CONFIG_FILE}")
+    print(
+        "BPR Dynamic Item Generator"
+    )
+    print(
+        "--------------------------"
+    )
+
+    print("Config:")
+    print(
+        f"  {CONFIG_FILE}"
+    )
+
     print()
+
     print("Generated:")
-    print(f"  {GENERATORS_OUTPUT}")
-    print(f"  {PATCH_OUTPUT}")
+    print(
+        f"  {GENERATORS_OUTPUT}"
+    )
+    print(
+        f"  {PATCH_OUTPUT}"
+    )
+
     print()
+
     print("Drop chances:")
     print(
         f"  Tier I:      "
