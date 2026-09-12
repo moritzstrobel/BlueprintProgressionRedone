@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate CameraShakePrototypes_patch_BPR.cfg from cameraShakes.json."""
+"""Generate BPR_CameraShakePrototypes.cfg from cameraShakes.json."""
 
 from __future__ import annotations
 
@@ -19,9 +19,10 @@ CONFIG_FILE = SCRIPT_DIR / "cameraShakes.json"
 OUTPUT_FILE = (
     CONTENT_DIR
     / "GameLite"
-    / "GameData"
+    / "ModGameData"
+    / "Testmod"
     / "CameraShakePrototypes"
-    / "CameraShakePrototypes_patch_BPR.cfg"
+    / "BPR_CameraShakePrototypes.cfg"
 )
 
 

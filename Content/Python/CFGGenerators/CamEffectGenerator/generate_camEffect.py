@@ -17,11 +17,12 @@ CONTENT_DIR = SCRIPT_DIR.parents[2]
 CONFIG_FILE = SCRIPT_DIR / "camEffects.json"
 
 OUTPUT_FILE = (
-	CONTENT_DIR
-	/ "GameLite"
-	/ "GameData"
-	/ "EffectPrototypes"
-	/ "CamEffectPrototypes_BPR.cfg"
+    CONTENT_DIR
+    / "GameLite"
+    / "ModGameData"
+    / "Testmod"
+    / "EffectPrototypes"
+    / "BPR_CamEffectPrototypes.cfg"
 )
 
 
@@ -30,34 +31,34 @@ OUTPUT_FILE = (
 # =============================================================================
 
 def load_config(path: Path) -> dict:
-	with path.open("r", encoding="utf-8") as file:
-		return json.load(file)
+    with path.open("r", encoding="utf-8") as file:
+        return json.load(file)
 
 
 def validate_config(config: dict) -> None:
-	families = config.get("weapon_families")
+    families = config.get("weapon_families")
 
-	if not isinstance(families, list) or not families:
-		raise ValueError(
-			"'weapon_families' must contain at least one weapon family."
-		)
+    if not isinstance(families, list) or not families:
+        raise ValueError(
+            "'weapon_families' must contain at least one weapon family."
+        )
 
-	if any(not isinstance(family, str) or not family for family in families):
-		raise ValueError(
-			"Every weapon family must be a non-empty string."
-		)
+    if any(not isinstance(family, str) or not family for family in families):
+        raise ValueError(
+            "Every weapon family must be a non-empty string."
+        )
 
-	duplicates = {
-		family
-		for family in families
-		if families.count(family) > 1
-	}
+    duplicates = {
+        family
+        for family in families
+        if families.count(family) > 1
+    }
 
-	if duplicates:
-		raise ValueError(
-			"Duplicate weapon family/families: "
-			+ ", ".join(sorted(duplicates))
-		)
+    if duplicates:
+        raise ValueError(
+            "Duplicate weapon family/families: "
+            + ", ".join(sorted(duplicates))
+        )
 
 
 # =============================================================================
@@ -65,85 +66,85 @@ def validate_config(config: dict) -> None:
 # =============================================================================
 
 def render_base_effect() -> str:
-	effect_sid = "BPR_PM_UpgradeKit_ShakeEffect"
-	shake_sid = "BPR_PM_UpgradeKit_Shake"
+    effect_sid = "BPR_PM_UpgradeKit_ShakeEffect"
+    shake_sid = "BPR_PM_UpgradeKit_Shake"
 
-	lines = [
-		f"{effect_sid} : struct.begin "
-		"{refurl=@BaseGame/EffectPrototypes.cfg;refkey=[0]}",
-		f"   SID = {effect_sid}",
-		"   Type = EEffectType::CameraShake",
-		"   Positive = EBeneficial::Negative",
-		"   CameraShakeEffectSubtype = ECameraShakeEffectSubtype::AddEffect",
-		f"   CameraShakePrototypeSID = {shake_sid}",
-		"struct.end",
-	]
+    lines = [
+        f"{effect_sid} : struct.begin "
+        "{refurl=@BaseGame/EffectPrototypes.cfg;refkey=[0]}",
+        f"   SID = {effect_sid}",
+        "   Type = EEffectType::CameraShake",
+        "   Positive = EBeneficial::Negative",
+        "   CameraShakeEffectSubtype = ECameraShakeEffectSubtype::AddEffect",
+        f"   CameraShakePrototypeSID = {shake_sid}",
+        "struct.end",
+    ]
 
-	return "\n".join(lines)
+    return "\n".join(lines)
 
 
 def render_family_effect(family: str) -> str:
-	effect_sid = f"BPR_{family}_UpgradeKit_ShakeEffect"
-	shake_sid = f"BPR_{family}_UpgradeKit_Shake"
+    effect_sid = f"BPR_{family}_UpgradeKit_ShakeEffect"
+    shake_sid = f"BPR_{family}_UpgradeKit_Shake"
 
-	lines = [
-		f"{effect_sid} : struct.begin "
-		"{refurl=@BaseGame/EffectPrototypes.cfg;refkey=[0]}",
-		f"   SID = {effect_sid}",
-		"   Type = EEffectType::CameraShake",
-		"   Positive = EBeneficial::Negative",
-		"   CameraShakeEffectSubtype = ECameraShakeEffectSubtype::AddEffect",
-		f"   CameraShakePrototypeSID = {shake_sid}",
-		"struct.end",
-	]
+    lines = [
+        f"{effect_sid} : struct.begin "
+        "{refurl=@BaseGame/EffectPrototypes.cfg;refkey=[0]}",
+        f"   SID = {effect_sid}",
+        "   Type = EEffectType::CameraShake",
+        "   Positive = EBeneficial::Negative",
+        "   CameraShakeEffectSubtype = ECameraShakeEffectSubtype::AddEffect",
+        f"   CameraShakePrototypeSID = {shake_sid}",
+        "struct.end",
+    ]
 
-	return "\n".join(lines)
+    return "\n".join(lines)
 
 
 def main() -> None:
-	print("Camera Effect Prototype CFG Generator")
-	print("--------------------------------------")
-	print(f"Config: {CONFIG_FILE}")
-	print(f"Output: {OUTPUT_FILE}")
-	print()
+    print("Camera Effect Prototype CFG Generator")
+    print("--------------------------------------")
+    print(f"Config: {CONFIG_FILE}")
+    print(f"Output: {OUTPUT_FILE}")
+    print()
 
-	if not CONFIG_FILE.exists():
-		raise FileNotFoundError(
-			f"Config file not found:\n{CONFIG_FILE}"
-		)
+    if not CONFIG_FILE.exists():
+        raise FileNotFoundError(
+            f"Config file not found:\n{CONFIG_FILE}"
+        )
 
-	config = load_config(CONFIG_FILE)
-	validate_config(config)
+    config = load_config(CONFIG_FILE)
+    validate_config(config)
 
-	families = config["weapon_families"]
-	non_base_families = [family for family in families if family != "PM"]
+    families = config["weapon_families"]
+    non_base_families = [family for family in families if family != "PM"]
 
-	sections = [render_base_effect()]
-	sections.extend(
-		render_family_effect(family)
-		for family in non_base_families
-	)
+    sections = [render_base_effect()]
+    sections.extend(
+        render_family_effect(family)
+        for family in non_base_families
+    )
 
-	header = [
-		"// -----------------------------------------------------------------------------",
-		"// AUTO-GENERATED FILE - DO NOT EDIT BY HAND",
-		"//",
-		"// Source: Python/CFGGenerators/CamEffectGenerator/camEffects.json",
-		"// Generated by: generate_camEffect.py",
-		"// -----------------------------------------------------------------------------",
-	]
+    header = [
+        "// -----------------------------------------------------------------------------",
+        "// AUTO-GENERATED FILE - DO NOT EDIT BY HAND",
+        "//",
+        "// Source: Python/CFGGenerators/CamEffectGenerator/camEffects.json",
+        "// Generated by: generate_camEffect.py",
+        "// -----------------------------------------------------------------------------",
+    ]
 
-	output = "\n".join(header + ["", "\n\n".join(sections)]) + "\n"
+    output = "\n".join(header + ["", "\n\n".join(sections)]) + "\n"
 
-	OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-	OUTPUT_FILE.write_text(output, encoding="utf-8")
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT_FILE.write_text(output, encoding="utf-8")
 
-	print("Generation successful.")
-	print()
-	print(f"Weapon families: {len(families)}")
-	print(f"Generated effects: {len(sections)}")
-	print(f"Written to:\n{OUTPUT_FILE}")
+    print("Generation successful.")
+    print()
+    print(f"Weapon families: {len(families)}")
+    print(f"Generated effects: {len(sections)}")
+    print(f"Written to:\n{OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
-	main()
+    main()

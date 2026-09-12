@@ -6,38 +6,17 @@ Expected project layout:
 
 Content/
 ├─ GameLite/
-│  └─ GameData/
-│     └─ ItemPrototypes/
-│        └─ ItemPrototypes_patch_BPR_UpgradeKits.cfg
+│  └─ ModGameData/
+│     └─ Testmod/
+│        └─ ItemPrototypes/
+│           └─ ConsumablePrototypes/
+│              └─ BPR_UpgradeKit_ConsumablePrototypes.cfg
 │
 └─ Python/
    └─ CFGGenerators/
       └─ ItemGenerator/
          ├─ upgrade_kits.json
          └─ generate_upgrade_kit_items.py
-
-Expected JSON structure:
-
-{
-  "settings": {
-    "mod_root": "Testmod",
-    "icon_path": "GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest",
-    "mesh_prototype_sid": "QuestItem_Case_X11",
-    "item_grid_width": 2,
-    "item_grid_height": 2,
-    "cost": 1000,
-    "weight": 0.1,
-    "sort_group": "ESortGroup::None",
-    "consumable_type": "EConsumableType::None",
-    "ui_use_sound": "EUISound::WearEquipment"
-  },
-
-  "weapon_families": [
-    "AK74",
-    "AKU",
-    "PM"
-  ]
-}
 """
 
 from __future__ import annotations
@@ -61,10 +40,11 @@ CONFIG_FILE = SCRIPT_DIR / "upgrade_kits.json"
 OUTPUT_FILE = (
     CONTENT_DIR
     / "GameLite"
-    / "GameData"
+    / "ModGameData"
+    / "Testmod"
     / "ItemPrototypes"
     / "ConsumablePrototypes"
-    / "ConsumablePrototypes_patch_BPR_UpgradeKits.cfg"
+    / "BPR_UpgradeKit_ConsumablePrototypes.cfg"
 )
 
 
@@ -181,7 +161,7 @@ def render_upgrade_kit(
 
     lines = [
         f"{item_sid} : struct.begin "
-        "{refurl=../ConsumablePrototypes.cfg;refkey=Bread}",
+        "{refurl=@BaseGame/ItemPrototypes/ConsumablePrototypes.cfg;refkey=Bread}",
 
         f"    SID = {item_sid}",
         f"    Icon = {icon_reference}",
