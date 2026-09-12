@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "description": "Stash-specific blueprint and Upgrade Kit distribution settings.",
+  "drop_chances": {
+    "tier_1": 0.333333,
+    "tier_2": 0.18,
+    "tier_3": 0.111111,
+    "upgrade_kit": 0.02
+  },
+  "stash_generators": [
+    "GamePass_Stash_ItemGenerator_Cheap",
+    "GamePass_Stash_ItemGenerator_Rare",
+    "GamePass_Stash_ItemGenerator_Common_Var1",
+    "GamePass_Stash_ItemGenerator_Common_Var2"
+  ]
+}
