@@ -115,24 +115,41 @@ def render_trader(trader_name: str, trader: dict, blueprints: list[str], default
     ]))
     allow_same = trader.get("allow_same_category_generation", defaults.get("allow_same_category_generation", True))
 
+    # Lootable Zone uses explicit free ItemGenerator indices 86-89, one per rank.
+    # Keep the same layout so the patch adds dedicated entries without touching
+    # the vanilla trader slots that contain ammo and the other stock categories.
+    start_index = int(trader.get("start_index", defaults.get("start_index", 86)))
+
     lines = [
         f"// {trader_name}",
         f"{trader_sid} : struct.begin {{bpatch}}",
         f"    SID = {trader_sid}",
         "",
         "    ItemGenerator : struct.begin {bpatch}",
-        "",
-        "        [*] : struct.begin {bpatch}",
-        f"            Category = {category}",
-        f"            PlayerRank = {', '.join(ranks)}",
-        f"            bAllowSameCategoryGeneration = {'true' if allow_same else 'false'}",
-        "",
-        "            PossibleItems : struct.begin",
     ]
-    for blueprint in blueprints:
-        lines.extend(render_item(blueprint, defaults))
+
+    for offset, rank in enumerate(ranks):
+        lines.extend([
+            "",
+            f"        [{start_index + offset}] : struct.begin",
+            f"            Category = {category}",
+            f"            PlayerRank = {rank}",
+            f"            bAllowSameCategoryGeneration = {'true' if allow_same else 'false'}",
+            "",
+            "            PossibleItems : struct.begin",
+        ])
+        for blueprint in blueprints:
+            lines.extend(render_item(blueprint, defaults))
+        lines.extend([
+            "            struct.end",
+            "",
+            "        struct.end",
+        ])
+
     lines.extend([
-        "            struct.end", "", "        struct.end", "", "    struct.end", "struct.end",
+        "",
+        "    struct.end",
+        "struct.end",
     ])
     return "\n".join(lines)
 
