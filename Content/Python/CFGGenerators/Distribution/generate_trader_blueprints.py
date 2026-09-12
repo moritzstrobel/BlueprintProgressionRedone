@@ -59,8 +59,8 @@ def pool_group_key(trader: dict) -> str:
     return f"Stage{stage}_{focus_part}"
 
 
-def pool_sid(trader: dict, vanilla_rank: str) -> str:
-    return f"BPR_TraderPool_{pool_group_key(trader)}_{vanilla_rank}"
+def pool_sid(trader: dict) -> str:
+    return f"BPR_TraderPool_{pool_group_key(trader)}"
 
 
 def validate_config(weapon_config: dict, trader_config: dict) -> None:
@@ -72,11 +72,14 @@ def validate_config(weapon_config: dict, trader_config: dict) -> None:
     if not isinstance(stage_rules, dict):
         raise ValueError("Missing or invalid 'stage_rules'.")
 
-    tier_caps = defaults.get("tier_cap_by_player_rank", {})
+    tier_chances = defaults.get("tier_chance_by_tier", {})
+    for tier in (1, 2, 3):
+        chance = tier_chances.get(str(tier))
+        if not isinstance(chance, (int, float)) or chance < 0:
+            raise ValueError(f"Missing/invalid chance for blueprint tier {tier}: {chance}")
+
     stock_counts = defaults.get("stock_count_by_player_rank", {})
     for vanilla_rank in VANILLA_RANKS:
-        if tier_caps.get(vanilla_rank) not in (1, 2, 3):
-            raise ValueError(f"Missing/invalid tier cap for player rank '{vanilla_rank}'.")
         stock = stock_counts.get(vanilla_rank)
         if not isinstance(stock, dict):
             raise ValueError(f"Missing stock count for player rank '{vanilla_rank}'.")
@@ -143,12 +146,12 @@ def build_trader_families(weapon_config: dict, trader_config: dict, trader: dict
 def build_pool_blueprints(
     weapon_config: dict,
     families: list[str],
-    tier_cap: int,
-) -> list[str]:
+    tier_chances: dict[str, int | float],
+) -> list[tuple[str, int | float]]:
     return [
-        tier_blueprint_sid(weapon_config, family, tier)
+        (tier_blueprint_sid(weapon_config, family, tier), tier_chances[str(tier)])
         for family in families
-        for tier in range(1, tier_cap + 1)
+        for tier in (1, 2, 3)
     ]
 
 
@@ -176,17 +179,15 @@ def render_pool_template() -> str:
 
 def render_pool(
     pool_group: str,
-    vanilla_rank: str,
-    blueprints: list[str],
+    blueprints: list[tuple[str, int | float]],
     defaults: dict,
 ) -> str:
-    sid = f"BPR_TraderPool_{pool_group}_{vanilla_rank}"
+    sid = f"BPR_TraderPool_{pool_group}"
     category = defaults.get("pool_category", "EItemGenerationCategory::Attach")
     allow_same = bool(defaults.get("allow_same_category_generation", True))
-    item_chance = defaults.get("pool_item_chance", 1)
 
     lines = [
-        f"// {pool_group} / {vanilla_rank}",
+        f"// {pool_group}",
         f"{sid} : struct.begin {{refkey=BPR_TraderPool_Template}}",
         f"    SID = {sid}",
         "    ItemGenerator : struct.begin",
@@ -196,11 +197,11 @@ def render_pool(
         "            PossibleItems : struct.begin",
     ]
 
-    for blueprint_sid in blueprints:
+    for blueprint_sid, chance in blueprints:
         lines.extend([
             "                [*] : struct.begin",
             f"                    ItemPrototypeSID = {blueprint_sid}",
-            f"                    Chance = {fmt_number(item_chance)}",
+            f"                    Chance = {fmt_number(chance)}",
             "                    MinCount = 1",
             "                    MaxCount = 1",
             "                struct.end",
@@ -226,6 +227,7 @@ def render_trader_patch(
     allow_same = bool(defaults.get("allow_same_category_generation", True))
     chance = defaults.get("subgenerator_chance", 1)
     stock_counts = defaults["stock_count_by_player_rank"]
+    sid = pool_sid(trader)
 
     lines = [
         f"// {trader_name}",
@@ -236,7 +238,6 @@ def render_trader_patch(
 
     for offset, vanilla_rank in enumerate(VANILLA_RANKS):
         stock = stock_counts[vanilla_rank]
-        sid = pool_sid(trader, vanilla_rank)
         lines.extend([
             f"        [{start_index + offset}] : struct.begin",
             f"            Category = {category}",
@@ -281,7 +282,7 @@ def main() -> None:
     validate_config(weapon_config, trader_config)
 
     defaults = trader_config["defaults"]
-    tier_caps = defaults["tier_cap_by_player_rank"]
+    tier_chances = defaults["tier_chance_by_tier"]
     pool_blocks = [render_pool_template()]
     patch_blocks: list[str] = []
     pool_count = 0
@@ -295,15 +296,14 @@ def main() -> None:
 
         group = pool_group_key(trader)
         if group not in generated_groups:
-            for vanilla_rank in VANILLA_RANKS:
-                blueprints = build_pool_blueprints(
-                    weapon_config,
-                    families,
-                    int(tier_caps[vanilla_rank]),
-                )
-                pool_blocks.append(render_pool(group, vanilla_rank, blueprints, defaults))
-                pool_count += 1
-                blueprint_entries += len(blueprints)
+            blueprints = build_pool_blueprints(
+                weapon_config,
+                families,
+                tier_chances,
+            )
+            pool_blocks.append(render_pool(group, blueprints, defaults))
+            pool_count += 1
+            blueprint_entries += len(blueprints)
             generated_groups.add(group)
 
         patch_blocks.append(render_trader_patch(trader_name, trader, defaults))
