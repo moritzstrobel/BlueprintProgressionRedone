@@ -1,51 +1,75 @@
 {
-  "schema_version": 2,
-  "_comment": "Trader blueprint distribution derived from weapon_progression.json. Trader JSON now stores only trader progression/focus metadata; blueprint lists are generated.",
+  "schema_version": 3,
+  "_comment": "Trader blueprint distribution. Traders draw a limited random stock from progression windows instead of exposing every eligible blueprint.",
   "defaults": {
-    "category": "EItemGenerationCategory::Attach",
-    "player_ranks": [
-      "ERank::Newbie",
-      "ERank::Experienced",
-      "ERank::Veteran",
-      "ERank::Master"
-    ],
-    "chance": 1,
-    "min_count": 1,
-    "max_count": 1,
-    "min_durability": 1,
-    "max_durability": 1,
-    "allow_same_category_generation": true
+    "start_index": 86,
+    "trader_category": "EItemGenerationCategory::SubItemGenerator",
+    "pool_category": "EItemGenerationCategory::Attach",
+    "allow_same_category_generation": true,
+    "subgenerator_chance": 1,
+    "pool_item_chance": 1,
+    "tier_cap_by_player_rank": {
+      "Newbie": 1,
+      "Experienced": 2,
+      "Veteran": 3,
+      "Master": 3
+    },
+    "stock_count_by_player_rank": {
+      "Newbie": {
+        "min": 2,
+        "max": 3
+      },
+      "Experienced": {
+        "min": 3,
+        "max": 4
+      },
+      "Veteran": {
+        "min": 4,
+        "max": 5
+      },
+      "Master": {
+        "min": 4,
+        "max": 5
+      }
+    }
   },
   "stage_rules": {
-    "_comment": "Trader progression is cumulative. max_blueprint_tier caps which blueprint tiers are sold for families available at that stage.",
+    "_comment": "Progression windows are intentionally non-cumulative from stage 3 onward so older weapon families remain tied to earlier traders.",
     "1": {
-      "max_weapon_rank": "Newbie",
-      "max_blueprint_tier": 1
+      "weapon_ranks": [
+        "Newbie"
+      ]
     },
     "2": {
-      "max_weapon_rank": "Experienced",
-      "max_blueprint_tier": 2
+      "weapon_ranks": [
+        "Newbie",
+        "Experienced"
+      ]
     },
     "3": {
-      "max_weapon_rank": "Experienced",
-      "max_blueprint_tier": 3
+      "weapon_ranks": [
+        "Experienced"
+      ]
     },
     "4": {
-      "max_weapon_rank": "Veteran",
-      "max_blueprint_tier": 2
+      "weapon_ranks": [
+        "Experienced",
+        "Veteran"
+      ]
     },
     "5": {
-      "max_weapon_rank": "Veteran",
-      "max_blueprint_tier": 3
+      "weapon_ranks": [
+        "Veteran"
+      ]
     },
     "6": {
-      "max_weapon_rank": "Veteran",
-      "max_blueprint_tier": 3,
-      "catch_all": true
+      "weapon_ranks": [
+        "Veteran"
+      ]
     }
   },
   "focus_groups": {
-    "_comment": "Optional soft filters. Omit focus on a trader to sell all families unlocked for its stage.",
+    "_comment": "Optional hard family filters applied after the stage progression window.",
     "nato": [
       "M16",
       "G37",
@@ -74,93 +98,93 @@
       "generator": "TraderZalesie_TradeItemGenerator",
       "region": "Lesser Zone",
       "progression_stage": 1,
-      "note": "Starting trader; basic early-game inventory."
+      "note": "Newbie-family pool. Higher blueprint tiers become available when the player rank increases."
     },
     "Terikon": {
       "generator": "TraderTerikon_TradeItemGenerator",
       "region": "Garbage / Slag Heap",
       "progression_stage": 2,
-      "note": "Early-midgame step above Zalissya."
+      "note": "Mixed Newbie and Experienced pool."
     },
     "NewbieVillage": {
       "generator": "NewbeeVillageTrader_TradeItemGenerator",
       "region": "Cordon / Rookie Village",
       "progression_stage": 2,
-      "note": "Broad early-midgame inventory."
+      "note": "Mixed Newbie and Experienced pool."
     },
     "Asylum": {
       "generator": "AsylumTrader_TradeItemGenerator",
       "region": "Wild Island / Shelter",
       "progression_stage": 2,
-      "note": "Early-midgame weapon progression."
+      "note": "Mixed Newbie and Experienced pool."
     },
     "Ikar": {
       "generator": "IkarTrader_TradeItemGenerator",
       "region": "Zaton / Icarus",
       "progression_stage": 2,
-      "note": "Early-midgame weapon progression."
+      "note": "Mixed Newbie and Experienced pool."
     },
     "Sultansk": {
       "generator": "SultanskTrader_TradeItemGenerator",
       "region": "Zaton / Sultansk",
       "progression_stage": 2,
-      "note": "Early-midgame weapon progression."
+      "note": "Mixed Newbie and Experienced pool."
     },
     "Shevchenko": {
       "generator": "ShevchenkoTrader_TradeItemGenerator",
       "region": "Zaton / Shevchenko",
       "progression_stage": 2,
-      "note": "Early-midgame weapon progression."
+      "note": "Mixed Newbie and Experienced pool."
     },
     "ChemicalPlant": {
       "generator": "TraderChemicalPlant_TradeItemGenerator",
       "region": "Chemical Plant",
       "progression_stage": 2,
-      "note": "Early-midgame weapon pools."
+      "note": "Mixed Newbie and Experienced pool."
     },
     "CementPlant": {
       "generator": "CementPlantTrader_TradeItemGenerator",
       "region": "Cement Factory",
       "progression_stage": 3,
-      "note": "Midgame; all blueprint tiers for currently unlocked weapon families."
+      "note": "Experienced-family pool; Newbie families are intentionally cut here."
     },
     "RostokNATO": {
       "generator": "RostokTraderNato_TradeItemGenerator",
       "region": "Rostok",
       "progression_stage": 3,
       "focus": "nato",
-      "note": "Midgame NATO-focused trader."
+      "note": "Experienced NATO-family pool."
     },
     "RostokSoviet": {
       "generator": "RostokTraderSoviet_TradeItemGenerator",
       "region": "Rostok",
       "progression_stage": 3,
       "focus": "soviet",
-      "note": "Midgame Soviet-focused trader."
+      "note": "Experienced Soviet-family pool."
     },
     "Malakhit": {
       "generator": "MalakhitTrader_TradeItemGenerator",
       "region": "STC Malachite",
       "progression_stage": 4,
-      "note": "Late-midgame; Veteran weapon families begin appearing."
+      "note": "Experienced and Veteran-family pool."
     },
     "RedForest": {
       "generator": "RedForestTrader_TradeItemGenerator",
       "region": "Red Forest",
       "progression_stage": 4,
-      "note": "Late-midgame; Veteran weapon families begin appearing."
+      "note": "Experienced and Veteran-family pool."
     },
     "Yanov": {
       "generator": "YanovTrader_TradeItemGenerator",
       "region": "Yaniv",
       "progression_stage": 5,
-      "note": "Late-game; full Veteran progression with all blueprint tiers."
+      "note": "Veteran-family pool; older families stay with earlier traders."
     },
     "Pripyat": {
       "generator": "PripyatTrader_TradeItemGenerator",
       "region": "Pripyat",
       "progression_stage": 6,
-      "note": "Endgame catch-all with every blueprint."
+      "note": "Veteran-family endgame pool; not a global catch-all."
     }
   }
 }
