@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-PYTHON_ROOT = SCRIPT_DIR.parents[2]
+PYTHON_ROOT = SCRIPT_DIR.parents[1]
 if str(PYTHON_ROOT) not in sys.path:
     sys.path.insert(0, str(PYTHON_ROOT))
 
