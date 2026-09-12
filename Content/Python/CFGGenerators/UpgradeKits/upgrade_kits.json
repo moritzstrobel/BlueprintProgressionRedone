@@ -1,0 +1,14 @@
+{
+  "settings": {
+    "mod_root": "Testmod",
+    "icon_path": "GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest",
+    "mesh_prototype_sid": "QuestItem_Case_X11",
+    "item_grid_width": 2,
+    "item_grid_height": 2,
+    "cost": 1000,
+    "weight": 0.1,
+    "sort_group": "ESortGroup::None",
+    "consumable_type": "EConsumableType::None",
+    "ui_use_sound": "EUISound::WearEquipment"
+  }
+}

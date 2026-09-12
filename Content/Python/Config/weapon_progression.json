@@ -1,12 +1,6 @@
 {
-  "schema_version": 3,
-  "description": "BPR stash progression for individual tier blueprints plus very rare family Upgrade Kits.",
-  "drop_chances": {
-    "tier_1": 0.333333,
-    "tier_2": 0.18,
-    "tier_3": 0.111111,
-    "upgrade_kit": 0.02
-  },
+  "schema_version": 4,
+  "description": "Central BPR weapon-family progression used by all generators and distribution rules.",
   "rank_behavior": {
     "cumulative": true,
     "vanilla_rank_mapping": {
