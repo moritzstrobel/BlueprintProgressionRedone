@@ -7,7 +7,7 @@
       "parent_refkey": "BlueprintTemplate",
       "icon": "Texture2D'/Testmod/GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest/T_NoData_TestItem_Tier1.T_NoData_TestItem_Tier1'",
       "item_grid_width": 2,
-      "item_grid_height": 2,
+      "item_grid_height": 1,
       "invisible_in_player_inventory": true
     },
     "2": {
@@ -16,7 +16,7 @@
       "parent_refkey": "BlueprintTemplate",
       "icon": "Texture2D'/Testmod/GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest/T_NoData_TestItem_Tier2.T_NoData_TestItem_Tier2'",
       "item_grid_width": 2,
-      "item_grid_height": 2,
+      "item_grid_height": 1,
       "invisible_in_player_inventory": true
     },
     "3": {
@@ -25,7 +25,7 @@
       "parent_refkey": "BlueprintTemplate",
       "icon": "Texture2D'/Testmod/GameLite/FPS_Game/UIRemaster/UITextures/Inventory/Quest/T_NoData_TestItem_Tier3.T_NoData_TestItem_Tier3'",
       "item_grid_width": 2,
-      "item_grid_height": 2,
+      "item_grid_height": 1,
       "invisible_in_player_inventory": true
     }
   },
