@@ -1,6 +1,6 @@
 {
-  "schema_version": 4,
-  "_comment": "Trader blueprint distribution. Traders draw a limited random stock from progression windows instead of exposing every eligible blueprint. Weapon-family progression is trader-based; blueprint tier availability is not tied to player rank.",
+  "schema_version": 6,
+  "_comment": "Trader blueprint distribution. Each trader has an explicit BPR weapon-family assortment derived from the vanilla trader weapon generators. Progression stages only control blueprint-tier availability.",
   "defaults": {
     "start_index": 86,
     "trader_category": "EItemGenerationCategory::SubItemGenerator",
@@ -13,176 +13,138 @@
       "3": 0.2
     },
     "stock_count_by_player_rank": {
-      "Newbie": {
-        "min": 2,
-        "max": 3
-      },
-      "Experienced": {
-        "min": 3,
-        "max": 4
-      },
-      "Veteran": {
-        "min": 4,
-        "max": 5
-      },
-      "Master": {
-        "min": 4,
-        "max": 5
-      }
+      "Newbie": { "min": 2, "max": 3 },
+      "Experienced": { "min": 2, "max": 3 },
+      "Veteran": { "min": 2, "max": 3 },
+      "Master": { "min": 2, "max": 3 }
     }
   },
   "stage_rules": {
-    "_comment": "Progression windows are intentionally non-cumulative from stage 3 onward so older weapon families remain tied to earlier traders. Every allowed family contributes Tier 1, Tier 2 and Tier 3 blueprints to the trader pool.",
+    "_comment": "Stages control blueprint-tier progression only. Weapon-family availability is configured per trader from the vanilla weapon assortment.",
     "1": {
-      "weapon_ranks": [
-        "Newbie"
-      ]
+      "blueprint_tier_chance_by_tier": { "1": 1, "2": 0.15, "3": 0 }
     },
     "2": {
-      "weapon_ranks": [
-        "Newbie",
-        "Experienced"
-      ]
+      "blueprint_tier_chance_by_tier": { "1": 1, "2": 0.5, "3": 0 }
     },
     "3": {
-      "weapon_ranks": [
-        "Experienced"
-      ]
+      "blueprint_tier_chance_by_tier": { "1": 0.35, "2": 1, "3": 0.15 }
     },
     "4": {
-      "weapon_ranks": [
-        "Experienced",
-        "Veteran"
-      ]
+      "blueprint_tier_chance_by_tier": { "1": 0.1, "2": 1, "3": 0.45 }
     },
     "5": {
-      "weapon_ranks": [
-        "Veteran"
-      ]
+      "blueprint_tier_chance_by_tier": { "1": 0, "2": 0.5, "3": 1 }
     },
     "6": {
-      "weapon_ranks": [
-        "Veteran"
-      ]
+      "blueprint_tier_chance_by_tier": { "1": 0, "2": 0.25, "3": 1 }
     }
-  },
-  "focus_groups": {
-    "_comment": "Optional hard family filters applied after the stage progression window.",
-    "nato": [
-      "M16",
-      "G37",
-      "Fora",
-      "Fora230",
-      "Kharod",
-      "M701",
-      "GP3A",
-      "Arev"
-    ],
-    "soviet": [
-      "PM",
-      "AKU",
-      "AK74",
-      "Gvintar",
-      "Lavina",
-      "Dnipro",
-      "PKP",
-      "SVDM",
-      "SVU",
-      "APB"
-    ]
   },
   "traders": {
     "Zalissya": {
       "generator": "TraderZalesie_TradeItemGenerator",
       "region": "Lesser Zone",
       "progression_stage": 1,
-      "note": "Newbie-family pool. Tier 1-3 blueprints can all appear; higher tiers are simply rarer."
+      "families": ["Obrez", "TOZ", "Viper", "ThreeLine", "PM"],
+      "note": "Vanilla assortment: direct weapons sold by Hamster."
     },
     "Terikon": {
       "generator": "TraderTerikon_TradeItemGenerator",
       "region": "Garbage / Slag Heap",
       "progression_stage": 2,
-      "note": "Mixed Newbie and Experienced pool."
+      "families": ["M860", "AKU", "Obrez", "ThreeLine", "UDP", "M10", "Kora"],
+      "note": "Vanilla assortment: direct weapons sold by the Slag Heap trader."
     },
     "NewbieVillage": {
       "generator": "NewbeeVillageTrader_TradeItemGenerator",
       "region": "Cordon / Rookie Village",
       "progression_stage": 2,
-      "note": "Mixed Newbie and Experienced pool."
+      "families": ["M860", "G37", "M16", "Bucket", "Gvintar", "SVDM", "Mark", "Fora230", "M10", "Kora", "Obrez", "TOZ", "Viper", "AK74", "AKU", "ThreeLine", "PM", "UDP"],
+      "note": "Vanilla assortment resolved from Trader T1/T2 gun subgenerators."
     },
     "Asylum": {
       "generator": "AsylumTrader_TradeItemGenerator",
       "region": "Wild Island / Shelter",
       "progression_stage": 2,
-      "note": "Mixed Newbie and Experienced pool."
+      "families": ["M860", "G37", "M16", "Bucket", "Gvintar", "SVDM", "Mark", "Fora230", "M10", "Kora", "Obrez", "TOZ", "Viper", "AK74", "AKU", "ThreeLine", "PM", "UDP"],
+      "note": "Vanilla assortment resolved from Trader T1/T2 gun subgenerators."
     },
     "Ikar": {
       "generator": "IkarTrader_TradeItemGenerator",
       "region": "Zaton / Icarus",
       "progression_stage": 2,
-      "note": "Mixed Newbie and Experienced pool."
+      "families": ["M860", "G37", "M16", "Bucket", "Gvintar", "SVDM", "Mark", "Fora230", "M10", "Kora"],
+      "note": "Vanilla assortment resolved from the Trader T2 gun subgenerator."
     },
     "Sultansk": {
       "generator": "SultanskTrader_TradeItemGenerator",
       "region": "Zaton / Sultansk",
       "progression_stage": 2,
-      "note": "Mixed Newbie and Experienced pool."
+      "families": ["M860", "G37", "M16", "Bucket", "Gvintar", "SVDM", "Mark", "Fora230", "M10", "Kora", "Obrez", "TOZ", "Viper", "AK74", "AKU", "ThreeLine", "PM", "UDP"],
+      "note": "Vanilla assortment resolved from Trader T1/T2 gun subgenerators."
     },
     "Shevchenko": {
       "generator": "ShevchenkoTrader_TradeItemGenerator",
       "region": "Zaton / Shevchenko",
       "progression_stage": 2,
-      "note": "Mixed Newbie and Experienced pool."
+      "families": ["M860", "G37", "M16", "Bucket", "Gvintar", "SVDM", "Mark", "Fora230", "M10", "Kora", "Obrez", "TOZ", "Viper", "AK74", "AKU", "ThreeLine", "PM", "UDP"],
+      "note": "Vanilla assortment resolved from Trader T1/T2 gun subgenerators."
     },
     "ChemicalPlant": {
       "generator": "TraderChemicalPlant_TradeItemGenerator",
       "region": "Chemical Plant",
       "progression_stage": 2,
-      "note": "Mixed Newbie and Experienced pool."
+      "families": ["M860", "G37", "M16", "Bucket", "Gvintar", "SVDM", "Mark", "Fora230", "M10", "Kora", "Obrez", "TOZ", "Viper", "AK74", "AKU", "ThreeLine", "PM", "UDP"],
+      "note": "Vanilla assortment resolved from Trader T1/T2 gun subgenerators."
     },
     "CementPlant": {
       "generator": "CementPlantTrader_TradeItemGenerator",
       "region": "Cement Factory",
       "progression_stage": 3,
-      "note": "Experienced-family pool; Newbie families are intentionally cut here."
+      "families": ["M860", "G37", "M16", "Bucket", "Gvintar", "SVDM", "Mark", "Fora230", "M10", "Kora", "Integral", "Zubr", "Grim", "Lavina", "SPSA", "M701", "SKP", "Arev", "APB", "Rhino"],
+      "note": "Vanilla assortment resolved from Trader T2/T3 gun subgenerators."
     },
     "RostokNATO": {
       "generator": "RostokTraderNato_TradeItemGenerator",
       "region": "Rostok",
       "progression_stage": 3,
-      "focus": "nato",
-      "note": "Experienced NATO-family pool."
+      "families": ["Integral", "G37", "SPSA", "M16", "Arev", "UDP", "Kora"],
+      "note": "Vanilla assortment: direct weapons sold by the NATO-focused Rostok trader."
     },
     "RostokSoviet": {
       "generator": "RostokTraderSoviet_TradeItemGenerator",
       "region": "Rostok",
       "progression_stage": 3,
-      "focus": "soviet",
-      "note": "Experienced Soviet-family pool."
+      "families": ["PM", "AKU", "Grim", "Gvintar", "Lavina", "SKP", "Fora230"],
+      "note": "Vanilla assortment: direct weapons sold by the Soviet-focused Rostok trader."
     },
     "Malakhit": {
       "generator": "MalakhitTrader_TradeItemGenerator",
       "region": "STC Malachite",
       "progression_stage": 4,
-      "note": "Experienced and Veteran-family pool."
+      "families": ["M860", "G37", "M16", "Bucket", "Gvintar", "SVDM", "Mark", "Fora230", "M10", "Kora", "Integral", "Zubr", "Grim", "Lavina", "SPSA", "M701", "SKP", "Arev", "APB", "Rhino"],
+      "note": "Vanilla assortment resolved from Trader T2/T3 gun subgenerators."
     },
     "RedForest": {
       "generator": "RedForestTrader_TradeItemGenerator",
       "region": "Red Forest",
       "progression_stage": 4,
-      "note": "Experienced and Veteran-family pool."
+      "families": ["M860", "G37", "M16", "Bucket", "Gvintar", "SVDM", "Mark", "Fora230", "M10", "Kora", "Integral", "Zubr", "Grim", "Lavina", "SPSA", "M701", "SKP", "Arev", "APB", "Rhino", "Kharod", "Dnipro", "D12", "Ram2", "SVU", "GP3A"],
+      "note": "Vanilla assortment resolved from Trader T2/T3/T4 gun subgenerators."
     },
     "Yanov": {
       "generator": "YanovTrader_TradeItemGenerator",
       "region": "Yaniv",
       "progression_stage": 5,
-      "note": "Veteran-family pool; older families stay with earlier traders."
+      "families": ["M860", "G37", "M16", "Bucket", "Gvintar", "SVDM", "Mark", "Fora230", "M10", "Kora", "Integral", "Zubr", "Grim", "Lavina", "SPSA", "M701", "SKP", "Arev", "APB", "Rhino", "Kharod", "Dnipro", "D12", "Ram2", "SVU", "GP3A"],
+      "note": "Vanilla assortment resolved from Trader T2/T3/T4 gun subgenerators."
     },
     "Pripyat": {
       "generator": "PripyatTrader_TradeItemGenerator",
       "region": "Pripyat",
       "progression_stage": 6,
-      "note": "Veteran-family endgame pool; not a global catch-all."
+      "families": ["M860", "G37", "M16", "Bucket", "Gvintar", "SVDM", "Mark", "Fora230", "M10", "Kora", "Integral", "Zubr", "Grim", "Lavina", "SPSA", "M701", "SKP", "Arev", "APB", "Rhino", "Kharod", "Dnipro", "D12", "Ram2", "SVU", "GP3A"],
+      "note": "Vanilla assortment resolved from Trader T2/T3/T4 gun subgenerators."
     }
   }
 }
