@@ -63,6 +63,13 @@ def pool_sid(trader: dict) -> str:
     return f"BPR_TraderPool_{pool_group_key(trader)}"
 
 
+def validate_tier_chances(tier_chances: dict, context: str) -> None:
+    for tier in (1, 2, 3):
+        chance = tier_chances.get(str(tier))
+        if not isinstance(chance, (int, float)) or chance < 0:
+            raise ValueError(f"Missing/invalid chance for blueprint tier {tier} in {context}: {chance}")
+
+
 def validate_config(weapon_config: dict, trader_config: dict) -> None:
     traders = trader_config.get("traders")
     stage_rules = trader_config.get("stage_rules")
@@ -72,11 +79,8 @@ def validate_config(weapon_config: dict, trader_config: dict) -> None:
     if not isinstance(stage_rules, dict):
         raise ValueError("Missing or invalid 'stage_rules'.")
 
-    tier_chances = defaults.get("tier_chance_by_tier", {})
-    for tier in (1, 2, 3):
-        chance = tier_chances.get(str(tier))
-        if not isinstance(chance, (int, float)) or chance < 0:
-            raise ValueError(f"Missing/invalid chance for blueprint tier {tier}: {chance}")
+    default_tier_chances = defaults.get("tier_chance_by_tier", {})
+    validate_tier_chances(default_tier_chances, "defaults.tier_chance_by_tier")
 
     stock_counts = defaults.get("stock_count_by_player_rank", {})
     for vanilla_rank in VANILLA_RANKS:
@@ -97,6 +101,13 @@ def validate_config(weapon_config: dict, trader_config: dict) -> None:
         invalid = [rank for rank in ranks if rank not in RANK_ORDER]
         if invalid:
             raise ValueError(f"Stage {stage} has invalid weapon ranks: {', '.join(invalid)}")
+
+        stage_tier_chances = rule.get("blueprint_tier_chance_by_tier", default_tier_chances)
+        if not isinstance(stage_tier_chances, dict):
+            raise ValueError(f"Stage {stage} has invalid blueprint tier chances.")
+        validate_tier_chances(stage_tier_chances, f"stage {stage}")
+        if not any(stage_tier_chances[str(tier)] > 0 for tier in (1, 2, 3)):
+            raise ValueError(f"Stage {stage} disables every blueprint tier.")
 
     known_families = set(get_weapon_families(weapon_config))
     focus_groups = trader_config.get("focus_groups", {})
@@ -152,6 +163,7 @@ def build_pool_blueprints(
         (tier_blueprint_sid(weapon_config, family, tier), tier_chances[str(tier)])
         for family in families
         for tier in (1, 2, 3)
+        if tier_chances[str(tier)] > 0
     ]
 
 
@@ -282,7 +294,7 @@ def main() -> None:
     validate_config(weapon_config, trader_config)
 
     defaults = trader_config["defaults"]
-    tier_chances = defaults["tier_chance_by_tier"]
+    default_tier_chances = defaults["tier_chance_by_tier"]
     pool_blocks = [render_pool_template()]
     patch_blocks: list[str] = []
     pool_count = 0
@@ -296,6 +308,8 @@ def main() -> None:
 
         group = pool_group_key(trader)
         if group not in generated_groups:
+            stage_rule = trader_config["stage_rules"][str(trader["progression_stage"])]
+            tier_chances = stage_rule.get("blueprint_tier_chance_by_tier", default_tier_chances)
             blueprints = build_pool_blueprints(
                 weapon_config,
                 families,
