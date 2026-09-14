@@ -197,7 +197,8 @@ def generate_patch(weapon: dict, npc: dict) -> str:
         f"// Output: Content/{PATCH_OUTPUT.relative_to(CONTENT_DIR).as_posix()}",
         "// -----------------------------------------------------------------------------",
         "",
-        "// Entries use [*] so this patch does not depend on fixed array positions.",
+        "// Rank entries use stable named keys, matching the pattern used by Lootable Zone.",
+        "// PossibleItems contains one subgenerator, so it uses the explicit [0] slot.",
         "",
     ]
     for target in npc["targets"]:
@@ -210,12 +211,12 @@ def generate_patch(weapon: dict, npc: dict) -> str:
                 continue
             prefix = pool_prefix(faction, role, logical_rank)
             entries.extend([
-                "      [*] : struct.begin",
+                f"      BPR_Items_{vanilla_rank} : struct.begin",
                 "         Category = EItemGenerationCategory::SubItemGenerator",
                 "         bAllowSameCategoryGeneration = true",
                 f"         PlayerRank = ERank::{vanilla_rank}",
                 "         PossibleItems : struct.begin",
-                "            [*] : struct.begin",
+                "            [0] : struct.begin",
                 f"               ItemGeneratorPrototypeSID = {prefix}_Rolls",
                 "               Weight = 1",
                 "            struct.end",
